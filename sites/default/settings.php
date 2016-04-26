@@ -52,6 +52,19 @@
  * @see conf_path()
  */
 
+
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+
+// means that var_dump shows the full array
+ini_set('xdebug.var_display_max_depth', -1);
+ini_set('xdebug.var_display_max_children', -1);
+ini_set('xdebug.var_display_max_data', -1);
+ini_set('max_execution_time', 60);
+
+
+
 /**
  * Database settings:
  *
@@ -217,21 +230,13 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'galderma',
+      'database' => 'jgalderma',
       'username' => 'root',
-      'password' => 'password',
+      'password' => '',
       'host' => 'localhost',
-      'port' => '3306',
+      'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
-
-      // 'database' => 'galdermadb',
-      // 'username' => 'galdermaussr',
-      // 'password' => 'TzjuSaDW52%!',
-      // 'host' => 'dfe0fd24877fb99ae60d18554ea89a0c7ffaf500.rackspaceclouddb.com',
-      // 'port' => '3306',
-      // 'driver' => 'mysql',
-      // 'prefix' => '',
     ),
   ),
 );
@@ -266,7 +271,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = 'Wwbs5WrxkpAYcMD9wdRrQbY3rTOBV1uejVFnO9PbBAo';
+$drupal_hash_salt = '5AC5nbi9x5H7-5ulMf4daZ2XsNP4vrxMdDdaMaa0pb0';
 
 /**
  * Base URL (optional).

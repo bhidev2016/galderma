@@ -52,7 +52,6 @@ CKEDITOR.editorConfig = function(config) {
     */
   config.bodyClass = '';
   config.bodyId = '';
-  //config.allowedContent = true;
   /**
     * Sample bodyClass and BodyId for the "marinelli" theme.
     */
