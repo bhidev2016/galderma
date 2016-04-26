@@ -1,0 +1,499 @@
+
+/* ==========================================================================
+   Galderma
+   ========================================================================== */
+
+body {
+    width: $width--desktop;
+    font-size: 100%;
+    @include col(12);
+    margin-left: auto;
+    margin-right: auto;
+    //background-image: url(../images/product_face_beach.png);
+    background-image: url(../images/background/background_products.jpg);
+    background-size: auto auto;
+    background-position:center top;
+    background-repeat: no-repeat;
+    color: $color--text;
+    main > .columns {
+        padding: 0em;
+    }
+}
+
+header {
+    .top-bar::after {
+        content: "";
+        border-top: solid 1px white;
+        width: 15em;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 2.5em;
+    }
+}
+
+.admin-menu .pre-top-bar-section {
+    position: relative;
+    top: 1.5em;
+}
+
+
+body.admin-menu {
+    header {
+        &::after {
+            margin-top: 3.2rem;
+        }
+    }
+}
+
+.pre-top-bar-section {
+    display: block;
+    padding: 0.5em;
+    ul {
+        float: none !important;
+        text-align: right;
+    }
+    li {
+        display: inline-block;
+        border-right: solid 1px white;
+        padding: 0em 1em;
+        line-height: 1em;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        &.last {
+            border-right: none;
+        }
+    }
+    a {
+        color: white;
+        line-height: 1em;
+        padding: 0em;
+        margin: 0em;
+
+    }
+}
+
+.top-bar {
+    background: none;
+    @media only screen and (min-width: 500px) {
+        min-height: 13.5em;
+        height: auto;
+        .toggle-topbar {
+            visibility: hidden;
+        }
+    }
+    @media only screen and (max-width: 499px) {
+        //padding-bottom: 8em;
+        min-height: 9em;
+        ul {
+            margin-top: 4em;
+        }
+
+    }
+}
+
+.top-bar .title-area {
+    float: none;
+    text-align: center;
+}
+
+.top-bar.expanded .title-area {
+    background-color: transparent;
+}
+
+.top-bar.expanded {
+    @media only screen and (max-width: 499px) {
+
+        ul {
+            margin-top: 0rem;
+        }
+        li.menu-icon span {
+            box-shadow: none;
+        }
+        li.toggle-topbar {
+            position: fixed;
+            right: 0px;
+            top: 0.9rem;
+            z-index: 9999;
+            //width: 10em;
+            background-color: $color-menu--background;
+            height: 5rem;
+            width: 17.7rem;
+            font-size: 1.2rem;
+            padding: 1.4rem 0.8rem 1.4rem 4.3rem;
+            border-left: solid 1px white;
+            //color: red;
+
+            a {
+                width: 100%;
+                padding: 0rem;
+                background-color: $color-menu--background;
+                background-image: url(../../galderma/images/menu/menu_cross.png);
+                background-size: 23px 23px;
+                background-repeat: no-repeat;
+                background-position-x: 100%;
+                background-position-y: 50%;
+                 span {
+                    width: 100%;
+                    padding: 0em;
+                    background-color: $color-menu--background;
+                     &::before {
+                        content: "Close Menu";
+                        padding: 0rem;
+                        display: inline;
+                        text-align: left;
+                        width: 100%;
+                        color: $color-menu--text;
+                        display: inline-table;
+                        padding-left: 2rem;
+                        background-color: $color-menu--background;
+                    }
+                }
+            }
+
+        }
+        #main-menu {
+            position: fixed;
+            right: 0px;
+            top: 4.5rem;
+            z-index: 9999;
+            width: auto;
+            text-align: left;
+            text-transform: uppercase;
+            border-left: solid 1px white;
+            border-bottom: solid 1px white;
+            background-color: $color-menu--background;
+            padding: 1px;
+            li {
+                border-top: solid 1px $color-menu--text;
+
+            }
+
+        }
+    }
+}
+
+.top-bar-section {
+    display: block;
+    text-align: center;
+    ul {
+        text-align: right;
+        li {
+            &.active > a {
+                background-color: $color--grey2__dark;
+
+            }
+            > a {
+                background-color: $color--grey2__dark;
+                padding-right: 0em !important;
+            }
+        }
+    }
+    @media only screen and (max-width: 499px) {
+        ul {
+            //width: auto;
+            //text-align: left;
+            //text-transform: uppercase;
+            //border-left: solid 1px white;
+            //border-bottom: solid 1px white;
+            //background-color: $color-menu--background;
+            //padding: 1px;
+            border: none;
+            background-color: transparent;
+            li {
+
+                background-color: transparent;
+                //border-top: solid 1px $color-menu--text;
+                border-top: none;
+                margin: 0rem 0.5rem 0rem 1rem;
+                padding: 1rem 0rem 1rem 0.4rem;
+                width: 16rem;
+                background-image: url(../../galderma/images/menu/arrow_right.png);
+                background-size: 15px 30px;
+                background-repeat: no-repeat;
+                background-position-x: 96%;
+                background-position-y: 50%;
+                &:hover {
+                    a {
+                        background-color: transparent;
+                        color: $color-menu--text;
+                    }
+                }
+                &.active > a {
+                    background-color: transparent;
+                    color: $color-menu--text;
+                }
+                > a {
+                    color: $color-menu--text;
+                    background-color: transparent;
+                    display: inline-block;
+                    padding: 0em;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.top-bar-section .has-dropdown > a:after {
+    display: none;
+}
+
+.title-area {
+    display: block;
+}
+.site-logo {
+    width: 18em;
+    margin: 0em auto;
+    margin-bottom: 1.5em;
+}
+.name {
+    display: none;
+}
+
+ul#main-menu {
+
+    @media only screen and (min-width: 500px) {
+        background-color: inherit;
+        float: none !important;
+        text-align: center;
+        text-transform: uppercase;
+        display: block;
+        li {
+            max-width: 7.5em;
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+            padding: 0.4em;
+            float: none;
+            display: inline-block;
+            width: 8em;
+            font-size: 1.2em;
+            a {
+                background-color: inherit;
+                padding: 0em;
+                font-weight: normal;
+                line-height: 1.5em;
+                font-weight: bold;
+
+            }
+        }
+    }
+}
+
+// Main
+main.l-main {
+    @include col(12);
+}
+
+body {
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="month"],
+    input[type="week"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    textarea {
+        width: inherit;
+    }
+    select {
+        width: inherit;
+    }
+}
+
+.profile, .entity-profile2 {
+    margin-left: 7em;
+    .field {
+        font-size: 1rem;
+        margin: 1em 0em;
+        .field-label {
+            min-width: 15em;
+            text-align: right;
+            margin-right: 0.8em;
+        }
+        h2.field-label {
+            padding-right: 0.3em;
+            margin: 0em 0.8em 0em 0em;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0em;
+            vertical-align: baseline;
+
+        }
+    }
+    h2 {
+        font-size: 1rem;
+        margin: inherit;
+        vertical-align: baseline;
+    }
+}
+
+#page-title {
+    text-align: center;
+    font-weight: normal;
+    width: 7em;
+    //border-top: solid 2px $color--grey1__dark;
+    padding-top: 1.1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+}
+
+//=======| Views |=========
+
+.view-id-templates {
+    .views-field {
+        display: inline-block;
+        margin: 1em;
+    }
+    .views-field-nothing {
+        max-width: 50%;
+        vertical-align: top;
+    }
+    .views-field-field-registration-stage {
+        font-size: 1.4em;
+        .registration-stage__new {
+            color: green;
+        }
+        .registration-stage__accepted {
+            //color: green;
+        }
+        .registration-stage__review, .registration-stage__reapproval {
+            color: orange;
+        }
+        .registration-stage__declined {
+            color: red;
+        }
+    }
+}
+
+.node-fntsite_template-form {
+    textarea {
+        height: 15em;
+    }
+}
+
+//========| Dropdowns |======
+.main-menu {
+    li.expanded {
+        &:hover {
+
+        }
+        ul.dropdown {
+            background-color: orange;
+        }
+    }
+}
+
+#main-menu {
+    @media only screen and (min-width: 1000px) {
+        > li {
+            vertical-align: text-top;
+            text-align: center;
+            a {
+                padding: 0em !important;
+            }
+        }
+        > li.expanded.has-dropdown {
+            position: static;
+            &:hover {
+                &::after {
+                    background-image: url(../../galderma/images/menu_nav/menu_nav_triangle.png);
+                    //background-size: 300px 150px;
+                    background-position-x: 0px;
+                    background-position-y: 0px;
+                    background-repeat: no-repeat;
+                    content: '';
+                    padding: 10em;
+                    position: relative;
+                    top: 11.4rem;
+                }
+            }
+            > ul.dropdown {
+                width: 20em;
+                background-color: $color--grey1__light;
+                padding: 2em 2em 6.2em 2em;
+                position: absolute;
+                left: 0;
+                text-align: left;
+                background-image: url(../../galderma/images/menu_nav/product_information_menu_lady.png);
+                background-size: 150px 150px;
+                background-position: 75% 50%;
+                background-repeat: no-repeat;
+                margin-top: 24px;
+                > li {
+                    display: block;
+                    position: static;
+                    &.back {
+                        display: none;
+                    }
+                    padding-left: 5em;
+                    padding-right: 20em;
+                    width: 2em;
+                    &:hover {
+                        > a {
+                            font-weight: bold;
+                        }
+                    }
+                    > ul.dropdown {
+                        left: 23em;
+                        top: 2em;
+                        border-left: solid 1px $color--grey1__dark;
+                        > li {
+                            display: block;
+                            margin-left: 0em;
+                            text-align: left;
+                            &.back {
+                                display: none;
+                            }
+                            padding: 0em;
+                            > a {
+                                margin: 0.5em 0em;
+                                &::before {
+                                    content: 'x';
+                                    color: transparent;
+                                    margin-right: 0.8em;
+                                    padding-left: 2em;
+                                }
+                            }
+                            &:hover {
+                                > a {
+                                    font-weight: bold;
+                                    &::before{
+                                        content: 'x';
+                                        color: transparent;
+                                        border-top: solid 1px $color--grey1__dark;
+                                        position: relative;
+                                        top: 0.4em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                a {
+                    color: black;
+                }
+
+            }
+        }
+    }
+}
+
+.node-type-product, .node-type-product-summary {
+    .view-mode-full {
+        display: none;
+    }
+    #page-title {
+        display: none;
+    }
+}

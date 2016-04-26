@@ -1,0 +1,192 @@
+lid,name,street,additional,city,province,postal_code,country,latitude,longitude,email,phone,www,source,is_primary
+532,Unit B,ITEC Business Park,,Newry,,BT35 6DN,gb,54.1825,-6.339364,bookings@hylagen.com,028 3025 1833,www.hylagen.com,3,0
+533,,140 Vulcans Lane,,Workington,CMA,CA14 2BP,gb,54.643684,-3.548999,enquiries@westlakelandmedicalgroup.com,07936 445639,www.westlakelandmedicalgroup.com,3,0
+534,,53 Mitchell Street,,Glasgow,LKS,G1 3LN,gb,55.859505,-4.255922,info@westerwood.co.uk,0141 204 3400,www.westerwoodhealth.co.uk,3,0
+535,,311 Main Street,,Bellshill,,ML4 1AW,gb,55.819235,-4.019153,info@lanarkshireaesthetics.com,01698 749846,www.lanarkshireaesthetics.com,3,0
+536,,8 Greenfield Crescent,,Edgbaston,,B15 3BE,gb,52.47033,-1.922159,info@elatehealth.co.uk,0844 8159333,www.elatehealth.co.uk,3,0
+537,,2 Highfield Road,,Edgbaston,,B15 3ED,gb,52.47161,-1.927016,reception@sagroups.co.uk,0121 285 4889,Currently not available,3,0
+538,Utopia Salon,35 Lordswood Road,,Harbourne,,B17 7RP,gb,52.458746,-1.958967,enquiries@birminghamaesthetics.com,0121 2583259,www.birminghamaesthetics.com,3,0
+539,,20 Chelmsley Lane,,Marston Green,,B37 7BG,gb,52.469376,-1.752954,enquiries@solihullmedicalcosmeticclinic.co.uk,0845 603 6150,www.solihullmedicalcosmeticclinic.co.uk,3,0
+540,,17 Edgedwood Road,,Rednal,,B45 8SB,gb,52.389097,-1.999972,info@greenwood-dental.co.uk,0121 4537949,Currently not available,3,0
+542,,3 While Road,,Sutton Coldfield,WMD,B72 1ND,gb,52.55772,-1.82643,info@jmdental.co.uk,0121 354 5433,www.jmdental.co.uk,3,0
+543,,Little Aston Hall Drive,,Little Aston,WMD,B74 3UP,gb,52.60198,-1.873941,surgeon.titley@gmail.com,0121 5807151,Currently not available,3,0
+544,Prospect House,13 Albert Road,,Tamworth,STS,B79 7JN,gb,52.636435,-1.692965,info@cosmedic-clinic.co.uk,0845 388 3808,www.cosmedic-clinic.co.uk,3,0
+545,,11 Station Approach,,Dorridge,,B93 8JA,gb,52.37289,-1.753098,ask@dentelle.co.uk,01564 770770,www.dentelle.co.uk,3,0
+546,Cutford House,Holyoaks Lane,,Bentley,WOR,B97 5SR,gb,52.314989,-1.998642,dr@drcamillahill.co.uk,07864 922453,www.drcamillahill.co.uk,3,0
+547,,23 Broad Street,,Somerset,,BA1 5LN,gb,51.384741,-2.360389,info@medikas.co.uk,01225 470035,www.medikas.co.uk,3,0
+548,FH Medi Spa Ltd,PO BOX 614,,Blackburn,LAN,BB2 5JE,gb,53.729482,-2.542392,lisa@fhmedispa.com,0800 122 3348,www.fhmedispa.com,3,0
+549,,71  Rook Lane,,Bradford,WYK,BD4 9NA,gb,53.772922,-1.726671,missirvine@hotmail.co.uk,01274 783333,www.heatherirvine.co.uk,3,0
+550,,549 Halliwell Road,,Bolton,LAN,BL1 8DB,gb,53.595797,-2.449317,auraaesthetics@hotmail.com,07912 312945,www.auraaesthetics.com,3,0
+551,Barwood House,Bradshaw Brow,,Bolton,LAN,BL2 3DD,gb,53.602276,-2.407102,Rachelentwisle@msn.com,07880 658042,www.bibaesthetics.co.uk,3,0
+552,,147 Lea Gate,,Harwood,,BL2 4BQ,gb,53.605195,-2.395571,radianceaesthetics@virginmedia.com,01204 822991,www.radianceskincare.co.uk,3,0
+553,,15 Bridgefield Drive,,Bury,LAN,BL9 7PE,gb,53.594604,-2.265695,sandipshroff@aol.com,07976 358104,Currently not available,3,0
+554,,13 New Church Road,,Hove,,BN3 4AA,gb,50.829082,-0.179736,info@hoveskinclinic.co.uk,01273 719834,www.hoveskinclinic.co.uk,3,0
+555,,165 Duncairn Gardens,,Belfast,,BT15 2GE,gb,54.613553,-5.93301,info@auroraskinclinic.com,028 9074 4482,www.auroraskinclinic.com,3,0
+556,,186 Rathgael Road,,Bangor,DOW,BT19 1RT,gb,54.640243,-5.678251,info@blossomcosmeticlaserclinic.com,028 9147 7073,www.blossomcosmeticlaserclinic.com,3,0
+557,Hamilton Face Clinic,,,Belfast,,BT2 7BG,gb,54.590212,-5.934162,info@hamiltonfaceclinic.com,00353 8342 17939,www.hamiltonfaceclinic.com,3,0
+558,,26 Monaghen Street,,Newry,,BT35 6AA,gb,54.176933,-6.342967,info@younique.ie,028 3026 7606,www.larkinaesthetics.com,3,0
+559,,30 Drumconready Road,,Maghera,,BT46 6BE,gb,54.820225,-6.751236,info@thesperrinclinic.com,028 7964 5892,www.thesperrinclinic.com,3,0
+560,,77 Main Street,,Moira,,BT67 0LH,gb,54.480756,-6.226345,info@faciallinesoftening.com,028 9261 2888,www.faciallinesoftening.com,3,0
+561,Suite 6,Merton Court,,Ailesbury Road,,BT71 6BE,gb,54.506614,-6.763175,dublin@ailesburyclinic.ie,0185 0918133,www.ailesburyclinic.ie,3,0
+562,3FiveTwo Clinic,6 Lisburn Road,,Belfast,,BT9 6AA,gb,54.587751,-5.936699,reception@facialaestheticsni.co.uk,028 9038 0070,www.facialaestheticsni.co.uk,3,0
+563,,424 Lisburn Road,,Belfast,,BT9 6GN,gb,54.571736,-5.961442,info@martinacollins.com,028 9066 6684,www.martinacollins.com,3,0
+564,Erneside Shopping Centre,The Point,,Enniskillen,FER,BT94 3PH,gb,54.406092,-7.61055,info@therapieclinic.com,0800 012 1565,www.therapieclinic.com,3,0
+565,,Maris Lane,,Cambridge,CAM,CB2 9LG,gb,52.173269,0.110791,info@cosmexclinic.com,01223 846363,www.cosmexclinic.co.uk,3,0
+566,,41 St Isan Road,,Cardiff,,CF14 4LW,gb,51.516825,-3.190652,info@r&rconsulting.co.uk,029 20618995,Currently not available,3,0
+567,,40 Gibwood Road,,Chester,CHS,CH2 3RS,gb,53.205976,-2.866608,spierce1128@btinternet.com,07469 946054,www.aesthetic-sense.co.uk,3,0
+568,Primrose Cottage,Warrington Road,,Mickle Trafford,,CH2 4EB,gb,53.228879,-2.826527,jane@jwaesthetics.com,0845 4568527,www.jwaesthetics.com,3,0
+569,,44 School Lane,,Biston Village,,CH43 7RQ,gb,53.4043,-3.082004,Aesthetics_inc@yahoo.co.uk,07534 871419,Currently not available,3,0
+570,Heather Cottage,10 Holmwood Drive,,Barnston,CHS,CH61 1AU,gb,53.349113,-3.080898,sarah@sarahwhiteaesthetics.com,01516 002 110,www.sarahwhiteaesthetics.com,3,0
+571,Park House,Park Road,,Rivenhall,,CM8 3PS,gb,51.839066,0.644598,facial_aesthetics@hotmail.com,01376 584555,www.facialaesthetics.co.uk,3,0
+572,,45 Rouse Way,,Colchester,ESS,CO1 2TT,gb,51.892744,0.916635,liz@emsaesthetics.co.uk,01206 792606,Currently not available,3,0
+573,,18 High Street,,Nayland,SFK,CO6 4JF,gb,51.971557,0.874159,info@naylanddentalclinic.co.uk ,01206 262262,www.naylanddentalclinic.co.uk,3,0
+574,,141 Brigstock Road,,Thornton Heath,SRY,CR7 7JN,gb,51.395111,-0.10935,info@laserasecroydon.com,0208 665 9380,www.laserasecroydon.com,3,0
+575,Claremont House,2 Woodcote Valley Road,,Purley,,CR8 3AG,gb,51.339566,-0.121042,enquiries@claremontclinic.net,0208 544 4822,www.claremontclinic.net,3,0
+576,Sedgemead House Dental Practice,Beaconsfield Road,,Dover,KEN,CT16 2LP,gb,51.133231,1.304848,sedgemeadhouse@gmail.com,01304 206548,www.sedgemeadhousedental.com,3,0
+577,,9 Guy Place East,,Leamington Spa,WAR,CV32 4RG,gb,52.293321,-1.533551,karen.zalewska@hotmail.co.uk,07720 710546,www.better-image.net,3,0
+578,Killock Cottage,,,Leamington Spa,WAR,CV32 6QB,gb,52.300983,-1.535363, leamington@gloclinics.co.uk,01926 889595,www.gloclinics.co.uk,3,0
+579,,6 Mansell Street,,Stratford upon Avon,WAR,CV37 6NR,gb,52.193981,-1.711032,info@skincareclinic.co.uk,01789 414289,www.skincareclinic.co.uk,3,0
+580,Cannon Park,De Montford Way,,Coventry,WAR,CV4 7DU,gb,52.383675,-1.551686, info@apsaras.co.uk,0247 669 3700,www.apsaras.co.uk,3,0
+581,,"120 Tresillian Road, Exhall",,Coventry,WAR,CV7 7PW,gb,52.470039,-1.476792,palfreylin@aol.com,07786 233 178,Currently not available,3,0
+582,The Oaklands Medical Centre,St Ann's Walk,,Middlewich,CHS,CW10 9BE,gb,53.190449,-2.446737,MiddlewichClinic@aol.com,07858 118 117,www.mctreatments.co.uk,3,0
+583,,33a Hospital Street,,Nantwich,CHS,CW5 5RL,gb,53.066242,-2.519757,info@renewclinic.co.uk,01270 610 834,www.renewclinic.co.uk,3,0
+584,,89 Woodfield Avenue,,Gravesend,KEN,DA11 7QQ,gb,51.43315,0.366633,kentlaser@outlook.com kentlaser@outlook.com kentlaser@outlook.com kentlaser@outlook.com kentlaser@outlook.com kentlaser@outlook.com kentlaser@outlook.com kentlaser@outlook.com kentlaser@outlook.com kentlaser@outlook.com ,01474 249957,www.kentlaser.co.uk,3,0
+585,,The Boulevard,,Greenhithe,KEN,DA9 9GW,gb,51.453479,0.288722,info@elite-aesthetics.co.uk,07582 061 515,www.elite-aesthetics.co.uk,3,0
+586,,8 Dudhope Street,,Tayside,,DD1 1JU,gb,56.464967,-2.975625,info@re-nuskinclinic.co.uk,01382 223249,www.re-nuskinclinic.co.uk,3,0
+587,,104 Main Street,,Invergowrie,,DD2 5BE,gb,56.461094,-3.061041,info@freshincmedispa.com,01382 562996,www.freshincmedispa.co.uk,3,0
+588,Torrington House,Branston Road,,Burton on Trent,DER,DE11 3BY,gb,52.792649,-1.687227,jane@wowaesthetics.co.uk,07812 563661,Currently not available,3,0
+589,Eastgate Business Centre,"18 Eastern Avenue, Stretton",,Burton on Trent,DER,DE13 0AT,gb,52.827406,-1.62028, info@stcdentalcare.co.uk,01283 547 411,www.stcdentalcare.co.uk,3,0
+590,,"3 Hollybrook Way, Heatherton Village",,Derby,DER,DE23 3TZ,gb,52.892082,-1.531342,info@image-aesthetics.co.uk,01332 552 768,www.image-aesthetics.co.uk,3,0
+591,,"2 The Green, Willington",,Derby,DER,DE65 6PB,gb,52.853818,-1.564354,calla@look-younger.co.uk,07970 067114,www.calla-aesthetics.co.uk,3,0
+592,,14  Beech Avenue,,Breston,DER,DE72 3BJ,gb,52.901637,-1.306069,ann.mason6@btinternet.com,07803 954759,www.facetofaceaesthetics.co.uk,3,0
+593,,293 Yarm Road,,Darlington,DUR,DL1 1BA,gb,54.522323,-1.524431,reception@queesway.co.uk,01642 554667,www.queensway.co.uk,3,0
+594,,131 Harpington Way,,Darlington,DUR,DL3 0RZ,gb,54.541426,-1.564898,info@dermasmooth.co.uk,07761 989262,www.dermasmooth.co.uk,3,0
+595,,36 Glaisdale Court,,Darlington,DUR,DL3 7AD,gb,54.526391,-1.571578,info@dermasmooth.co.uk,07969 467631,www.dermasmooth.co.uk,3,0
+596,,81 Thorne Road,,Doncaster,,DN1 2ES,gb,53.525651,-1.123812,info@elements.org.uk,01302 34 34 32,www.elements.org.uk,3,0
+597,,"Buttercross Court, Tickhill",,Doncaster,,DN11 9JX,gb,53.434069,-1.110632,helenmedico@yahoo.co.uk,07860 823511,Currently not available,3,0
+598,,"152 Thorne Road, Edenthorpe",,Doncaster,,DN3 2LU,gb,53.554082,-1.064322,hello@glow.me.uk,07884 177939,www.hello.glow.me.uk,3,0
+599,St Catherines House,Woodfield Park,,Tickhill Rd,,DN4 8QP,gb,53.496559,-1.145829,debybradbury@googlemail.com,07827 293458,www.pureaestheticsclinic.co.uk,3,0
+600,,21-23 Church Hill Place,,Edinburgh,,EH10 4BE,gb,55.932248,-3.209301,info@dermalclinic.co.uk,0131 447 2642,www.dermalclinic.co.uk,3,0
+601,,86 Princes Street,,Edinburgh,,EH2 2BB,gb,55.95196,-3.198054,info@janepatersonaesthetics.co.uk,07802 762223,Currently not available,3,0
+602,Waterside House,19 Hawthornbank Lane,,Edinburgh,,EH4 3BH,gb,55.951494,-3.217721,info@you-gp.com,0131 225 5656,www.you-gp.com,3,0
+604,"Radiance Medispa, Augustus House",New North Road,,Exeter,DEV,EX4 4HL,gb,50.730634,-3.539258,info@radiancemedispa.co.uk,01392 277 799,www.radiancemedispa.co.uk,3,0
+605,,22 Lawrence Court,,Falkirk,STI,FK5 4FS,gb,56.035702,-3.832153,jenbodman@yahoo.com,07894 048900,Currently not available,3,0
+606,,142 West Drive,,Cleveleys,,FY5 2EG,gb,53.882008,-3.023756,gillynails@hotmail.com,07855 778296,www.welivereaestheticsclinic.co.uk,3,0
+607,,1A Miletas Place,,Lytham St Annes,,FY8 1BQ,gb,53.739988,-3.000413,cherie@enhancinghealthandbeauty.com,07787 686253,www.enhancinghealthandbeauty.com,3,0
+608,,61 Miller Street,,Glasgow,LKS,G1 1EB,gb,55.859245,-4.251267,info@visageglasgow.co.uk,0141 222 6580,www.visageglasgow.co.uk,3,0
+609,,24-26 Wilson Street,,Glasgow,LKS,G1 1SS,gb,55.858514,-4.246716,fshanksaesthetics@yahoo.com,07793 324668,Currently not available,3,0
+610,,70 West Regent Street,,Glasgow,LKS,G2 2QZ,gb,55.863322,-4.257215,info@luxeskin.co.uk,0141 366 3132,www.dermalfillersglasgow.co.uk,3,0
+611,,3 Elder Grove,,Glasgow,LKS,G51 4EG,gb,55.856968,-4.337755,info@allureaesthetics.co.uk,0141 882 0027,www.allureaesthetics.co.uk,3,0
+612,,8 Belcote Place,,Cumbernauld,,G68 0GJ,gb,55.962798,-4.007751,liz@palmcosmetics.co.uk,07941 883148,Currently not available,3,0
+613,,27 Whitemoss Road,,East Kilbride,,G74 8JB,gb,55.763695,-4.170786,info@whitemossdental.com,01355 220013,www.whitemossdental.co.uk,3,0
+614,Trademark house,,,Hampshire,,GU31 4AT,gb,51.010343,-0.927726,elanceltd@btconnect.com,01730 260027,www.elancebeauty.co.uk,3,0
+615,,27 High Street,,Hampshire,,GU32 3JR,gb,51.00362,-0.935275,info@meonfacial.com,01730 265555,www.meonfacial.com,3,0
+616,Roberts House,2 Manor Road,,Ruislip,LND,HA4 7LB,gb,51.576387,-0.427404,info@perfectimageconsultants.co.uk,01895 630604,www.perfectimageconsultants.co.uk,3,0
+617,,40 Helted Way,,Huddersfield,WYK,HD5 8XZ,gb,53.633223,-1.754753,info@rewonder.co.uk,07887 572317,www.rewonder.co.uk,3,0
+618,The Clinik,20 Bethel Street,,Brighouse,WYK,HD6 1JN,gb,53.701242,-1.780724,clloyd1@sky.com,01484 723828,www.theclinik.co.uk,3,0
+619,,12 Princes Square,,Harrogate,NYK,HG1 1LX,gb,53.991187,-1.539786, info@harrogateaesthetics.co.uk,01423 567 567,www.harrogateaesthetics.co.uk,3,0
+620,,128  Woodford Avenue,,Ilford,ESS,IG2 6XA,gb,51.581511,0.058944,info@dental-healthcentre.co.uk,0208 550 0546,www.dental-healthcentre.co.uk,3,0
+621,,22 Brandville Gardens,,Ilford,LND,IG6 1JF,gb,51.586248,0.076961,drkminocha@googlemail.com,01992 574694,www.beautyskinandeyelashlounge.co.uk,3,0
+622,,26  Hill Street,,St Helier,JSY,JE2 4UA,gb,49.183503,-2.104118,info@hillstreetclinic.com,01534 878515,www.hillstreetclinic.com,3,0
+623,,30 London Street,,Chertsey,SRY,KT16 8AA,gb,51.391598,-0.502123,reception@thecourtyardclinic.com,01932 582949,www.thecourtyardclinic.co.uk,3,0
+624,,25 London Street,,Chertsey,SRY,KT16 8AP,gb,51.391629,-0.501846,reception@esteticaa.co.uk,01932 570099,www.estetica.co.uk,3,0
+625,,58 Knightwood Crescent,,New Malden,SRY,KT3 5JS,gb,51.39282,-0.255536,ghaffoori@yahoo.co.uk,07974 332650,Currently not available,3,0
+626,,142 Halbeath Road,,Dunfermiline,FIF,KY11 4LB,gb,56.078623,-3.418964,juliast@aol.co.uk,07764 764828,Currently not available,3,0
+627,Lomond House,4,,Kinross,,KY13 9HF,gb,56.203003,-3.409553,annedmello@btinternet.com,07967 174355,www.clinicalenhance.co.uk,3,0
+628,,72 Rodney Street,,Liverpool,MSY,L1 9AF,gb,53.400407,-2.973928,info@nirvanaaesthetics.co.uk,0151 707 8881,www.nirvanacosmetics.co.uk,3,0
+629,,88 Rodney Street,,Liverpool,MSY,L1 9AR,gb,53.399446,-2.974114,info@btoxclinics.co.uk,0151 706 7906,www.btoxclinics.co.uk,3,0
+630,,95 Allerford Road,,West Derby,,L12 4XW,gb,53.436103,-2.89424,rwilliams262626@aol.com,07718 224702,www.love-aesthetics.co.uk,3,0
+631,,334 Smithdown Road,,Liverpool,MSY,L15 5AN,gb,53.388995,-2.916198,info@thewhiteroomsclinic.co.uk,0151 735 0739,www.thewhiteroomsclinic.co.uk,3,0
+632,Enrica House,"18 Rumford Court, Rumford Place",,Liverpool,MSY,L3 9DG,gb,53.408358,-2.994396,info@drjamesclinic.co.uk,0151 236 1370,www.drjamesclinic.co.uk,3,0
+633,,332 Moorhey Road,,Maghull,MSY,L31 5LR,gb,53.504936,-2.938268,joanneainsworth73@hotmail.co.uk,07581 087063,www.beyondbeautifulaesthetics.co.uk,3,0
+634,,10 Boyes Brow,,Liverpool,MSY,L33 2DZ,gb,53.490869,-2.891323,jodimc@live.co.uk,07540 742322,Currently not available,3,0
+635,,89 Park Lane,,Sutton Bonington,LEI,LE12 5NQ,gb,52.812884,-1.244332,mail@simply-aesthetics.co.uk,07817 329172,www.simply-aesthetics.co.uk,3,0
+636,Fox Hollows,69 Main Street,,Leicester,LEI,LE12 8TG,gb,52.713449,-1.196133,nareetkumar@aol.com,07790 006738,www.rejuvea.co.uk,3,0
+637,,"11 Strathern Road, Glenfield",,Leicester,LEI,LE3 9QA,gb,52.658839,-1.177916,karenliggins@hotmail.co.uk,07967 482521,Currently not available,3,0
+638,,80 Park Road,,Leicester,LEI,LE8 4EF,gb,52.573714,-1.168897,jan@enhance-aesthetics.co.uk,07962 611909,www.enhance-aesthetics.co.uk,3,0
+639,,27 Heron Close,,Leicester,LEI,LE8 9DZ,gb,52.579507,-1.034028,hancock.natalia@mail.ru,07910 540 993,Currently not available,3,0
+640,,"23 Ashfield Road, Desford",,Leicester,LEI,LE9 9NY,gb,52.626007,-1.303566,es.aesthetics@hotmail.co.uk,07843 495971,www.es-aesthetics.co.uk,3,0
+641,Penrhos Manor,Oak Drive,,Colwyn Bay,,LL29 7YH,gb,53.295102,-3.740677,karen@northwalesaesthetics.co.uk,0800 0284744,www.northwalesaesthetics.org.uk,3,0
+642,,27a Nettleham Road,,Lincoln,LIN,LN2 1RQ,gb,53.239332,-0.531686,guin@facialperfection.net,07903 932286,www.facialperfection.net,3,0
+643,,103 Commercial Street,,Leeds,WYK,LS26 0QD,gb,53.748521,-1.477523,info@alevere.com,0113 282 2266,www.alevere.com,3,0
+644,"Saks Hair Salon, David Lloyd Leisure Club",Tongue Lane,,Leeds,WYK,LS6 4QW,gb,53.838815,-1.561747,melodyrakusen@me.com,07501 016602,www.secretskin.net,3,0
+645,,2 Gibwood Road,,Northenden,,M22 4BT,gb,53.406562,-2.265463,info@faceandeye.co.uk,0161 947 2720,www.faceandeye.co.uk,3,0
+646,,60 Far Hey Close,,Manchester,LAN,M26 3GL,gb,53.559236,-2.3442,helen@timeless-treatments.co.uk,07971 259263,Currently not available,3,0
+647,Fairbairn Building,504 Henry Street,,Manchester,LAN,M4 5DH,gb,53.48387,-2.229363,drchrisferguson@me.com,07984 418531,www.drchrisferguson.com,3,0
+648,,78 Bury Old Road,,Whitefield,,M45 6TQ,gb,53.540197,-2.284004,info@mac-asthetics.com,0161 773 3614,www.mac-aesthetics.co.uk,3,0
+649,,121-123 Hartington Street,,Bedford,BDF,MK41 7RN,gb,52.146115,-0.471344, info@bedfordskinclinic.co.uk,01234 269890,www.bedfordskinclinic.com,3,0
+650,The Retreat,New Road,,Maulden,BDF,MK45 2BQ,gb,52.016595,-0.469398,info@faceadvice.co.uk,01525 403040,Currently not available,3,0
+651,,25 Bothwell Road,,Hamilton,,ML3 0AS,gb,55.780531,-4.045472,enquiries@francesturnertraill.co.uk,01698 458954,www.francesturnertraill.co.uk,3,0
+652,,17 Northumberland Square,,North Shields,,NE30 1PX,gb,55.010672,-1.445924,reception@newyou-medispa.co.uk,0191 257 3141,www.newyoumedispa.co.uk,3,0
+653,Eldon Chambers,7 Wheeler Gate,,Nottingham,NTT,NG1 2NS,gb,52.952712,-1.150397,nurses@pureaesthetics.co.uk,0115 950 2020,www.pureaesthetics.co.uk,3,0
+654,,112 Mansfield Road,,Nottingham,NTT,NG1 3HL,gb,52.96104,-1.150312,info@featuresnottingham.co.uk,0115 950 1977,www.featuresnottingham.co.uk,3,0
+655,,139 Nottingham Road,,Nottingham,NTT,NG16 6BT,gb,53.070184,-1.299736,reception@selstoncosmeticclinic.com,01773 861845,www.selstoncosmeticclinic.com,3,0
+656,,186 Nottingham Road,,Mansfield,NTT,NG18 4AF,gb,53.13351,-1.197787,pt-cosmetic@hotmail.com,07969 315988,www.drpaultemple.co.uk,3,0
+657,Compton Acres Shopping Centre,"Compton Acres, West Bridgeford",,Nottingham,NTT,NG2 7RS,gb,52.918275,-1.15374,enquiries@medicalcosmeticsltd.co.uk,0845 045 0980,www.medicalcosmeticsltd.co.uk,3,0
+658,Newark Beacon Innovation Centre,Cafferata Way,,Newark,NTT,NG24 2TN,gb,53.077007,-0.791258,enquiries@loveyourskin.org.uk,01636 653032,www.loveyourskin.org.uk,3,0
+659,,"21 Marshall Road, Mapperley",,Nottingham,NTT,NG3 6HS,gb,52.977176,-1.1152,kairen@kamaclinicalservices.co.uk,07789 173456,www.kamaclinicalservices.co.uk,3,0
+660,,64 Broad Valley Drive,,Nottingham,NTT,NG6 8XA,gb,53.025209,-1.174317,hscalea@yahoo.co.uk,07979 817219,Currently not available,3,0
+661,Luxe Skin Clinic,22 Nuthall Road,,Nottingham,NTT,NG8 5AT,gb,52.969468,-1.184501,anitazaw@googlemail.com,07794 296714,Currently not available,3,0
+662,Daventry Leisure Centre,,,Daventry,NTH,NN11 4FP,gb,52.259962,-1.158475,info@indulgencebeauty.me.uk,07734 565864,www.indulgencebeauty.me.uk,3,0
+663,The Stepps,"Harborough Road, Maidwell",,Northampton,NTH,NN6 9JA,gb,52.387204,-0.905912,emmamillam@hotmail.co.uk,07803 597722,www.facingchangeaesthetics.co.uk,3,0
+664,The Stables,"Tithe Farm, Moulton Road",,Holcot,,NN6 9SH,gb,52.317188,-0.842076,info@papilio-cosmetic.co.uk,01604 648667,www.papilio-cosmetic.co.uk,3,0
+665,Bure House,Rectory Road,,Horstead,,NR12 7EP,gb,52.728068,1.351051,reception@coltishallclini.co.uk,0800 043 0737,www.coltishallclinic.co.uk,3,0
+666,,10 Thornton Avenue,,Rochdale,LAN,OL11 5LD,gb,53.605873,-2.158476,Eleanor.wiggins@yahoo.co.uk,07946 377305,Currently not available,3,0
+667,The Clinic Rooms,Kinders Lane,,Greenfield,,OL3 7BW,gb,53.536086,-2.004476,info@faultlessbeauty.co.uk,07812 800517,www.faultlessbeauty.co.uk,3,0
+668,,64 High Street,,Blairgowrie,PER,PH10 6DF,gb,56.591677,-3.340155,reception@blairgowriedentalcare.co.uk,01250 875136,www.blairgowriedentalcare.co.uk,3,0
+669,,80 Watling Street Road,,Fulwood,,PR2 8BP,gb,53.77856,-2.693924,kerry@drhennessy.com,08450 600 678,www.drhennessy.com,3,0
+670,Manor Court,1 Aylesbury Park Road,,Ribchester,,PR3 3XU,gb,53.816701,-2.512077,juliequinn25@gmail.com,01254 824 726,www.juliepawsonaesthetics.co.uk,3,0
+671,,49 Hawkshead Street,,Southport,LAN,PR9 9BL,gb,53.648269,-2.989277,shunablackburn@hotmail.com,07868 899754,www.elixirskinclinic.co.uk,3,0
+672,,115 Queens Road,,Reading,BRK,RG1 4DA,gb,51.453771,-0.961026,info@drbk.co.uk,01189 606930,www.drbk.co.uk,3,0
+674,,10 Wildgoose Drive,,Horsham,SXW,RH12 1TU,gb,51.068613,-0.348578,skintek@btinternet.com,01403 241341,www.sussexbeautyclinic.com,3,0
+676,,Holtye Road,,East Grinstead,,RH19 3EB,gb,51.135969,0.021145,information@ramanmalhotra.com,01883 712888,www.ramanmalhotra.com,3,0
+677,Cable House,"Station Road, Halfway",,Sheffield,SYK,S20 3GT,gb,53.327846,-1.337087,lisamills101@hotmail.co.uk,07793 459093,www.twofacedaesthetics.co.uk,3,0
+678,"The Treatment Rooms, Chesham House",Chesham Road,,Sheffield,SYK,S70 2NT,gb,53.554241,-1.489813,Emmatrueman@talktalk.net,07738 687590,www.hartleyaesthetics.co.uk,3,0
+679,Rockfield,Warren Lane,,Staincross,,S75 5BQ,gb,53.59711,-1.50876,val.brearley@hotmail.com,07843 779780,Currently not available,3,0
+680,,"212 Bocking Lane, Greenhill",,Sheffield,SYK,S8 7BP,gb,53.32795,-1.488013,martin@peachpractice.com,07951 249596,www.peachpractice.com,3,0
+681,,274 Stockport Road,,Gee Cross,,SK14 5RF,gb,53.437915,-2.069913,contact@hilarydownhill.co.uk,0161 366 7000,www.hilarydownhill.com,3,0
+682,,5 Rae Street,,Stockport,CHS,SK3 9LJ,gb,53.403932,-2.175868,amanda@goddess.me.uk,07935 648166,Currently not available,3,0
+683,,8  Victoria Avenue,,Cheadle Hulme,CHS,SK8 5DL,gb,53.378323,-2.195202,info@skindeepsolutions.co.uk,0161 2860617,www.skindeepsolutions.co.uk,3,0
+684,,49 Station Road,,Cheadle Hulme,CHS,SK8 7AA,gb,53.375307,-2.187504,shhh@juliaknightley.co.uk,0161 485 8104,www.juliaknightley.co.uk,3,0
+685,,84 Rogers Lane,,Stoke Poges,BKM,SL2 4LF,gb,51.546254,-0.590111,info@cosmeticskinclinic.com,01753 646 660,www.cosmeticskinclinic.com,3,0
+686,The Marlow Club,Globe Park,,Buckinghamshire,,SL7 1LU,gb,51.573661,-0.760283,info@mybeautydoctor.co.uk,0800 4102020,www.mybeautydoctor.co.uk,3,0
+689,,Beechwood Drive,,Sunderland,,SR2 7LU,gb,54.900452,-1.395306,beechwoodaesthetics@gmail.com,0191 565 4217,www.beechwoodaesthetics.co.uk,3,0
+690,,10 Londonderry Terrace,,Sunderland,,SR3 2EE,gb,54.872769,-1.398201,claire.witten@ntw.nhs.uk,07887 831439,Currently not available,3,0
+691,,"340 Weston Road, Weston Coyney",,Stoke on Trent,STS,ST3 6EZ,gb,52.99035,-2.099923,info@westoncosmetic.co.uk ,01782 461079 ,www.westoncosmetic.co.uk,3,0
+692,,32 Lower Richmond Road,,Putney,,SW15 1JP,gb,51.467225,-0.21875,info@vivaskinclinics.com,0800 072 9192,www.vivaskinclinics.com,3,0
+693,,34 Hans Road,,Knightsbridge,LND,SW3 1RW,gb,51.498297,-0.163041,drrita@drritarakus.com,"0207 460 7324, 07000 400321",www.drritarakus.com,3,0
+694,,13 Crescent Place,,London,,SW3 2EA,gb,51.494114,-0.168235,office@drrichardsibthorpe.com,020 7052 0070,www.drrichardsibthorpe.com,3,0
+695,,Hyde Park Gate,,London,LND,SW7 5ED,gb,51.501536,-0.184431,info@yttriusskin.com,Currently not availabe,www.yttriusskin.com,3,0
+696,Darwin Court,8 Oxon Business Park,,Shrewsbury,SHR,SY3 5AL,gb,52.715115,-2.799778,info@the-dentalspa.co.uk,01743 343433,www.the-dentalspa.co.uk,3,0
+697,,8 The Old Main Road,,Pawlett,,TA6 4RY,gb,51.180096,-3.001865,aesthetics@drjbuckmaster.co.uk,01278 686274,www.drjbuckmaster.co.uk,3,0
+698,,5 Pound Lane,,Sevenoaks,KEN,TN13 3TB,gb,51.277398,0.192657,cheralyn@lumleyaesthetics.co.uk,0800 316 2627,www.lumleyaestehtics.co.uk,3,0
+700,,32 South Cliff,,Bexhill on Sea,ESX,TN39 3EH,gb,50.835775,0.451712,bhscc@talktalk.net,01424 213298,www.bexhillcosmeticclinic.co.uk,3,0
+701,,190 Kingston Road,,Teddington,LND,TW11 9JD,gb,51.421393,-0.319427,info@theivy.co.uk,0208 977 8700,www.theivy.co.uk,3,0
+702,,133-135 Kew Road,,Richmond,SRY,TW9 2PN,gb,51.465834,-0.2989,info@bodyvie.co.uk,0203 773 7969,www.bodyvie.com,3,0
+703,Urban Wellbeing,,,Soho,LND,W1F 0JT,gb,51.513069,-0.135981,book@facecliniclondon.com,0207 851 6624,www.facecliniclondon.com,3,0
+704,,19A Cavendish Square,,London,,W1G 0PN,gb,51.516202,-0.145997,cranley@cranleyclinic.com,0207 4993223,www.drnicklowe.com,3,0
+705,,27 Devonshire Place,,London,,W1G 6JF,gb,51.522418,-0.150388,info@rowlandpayne.co.uk,020 7224 1228,https://www.thelondonclinic.co.uk/consultants/dr-christopher-m-e-rowland-payne,3,0
+707,,140 Harley Street,,London,,W1G 7LB,gb,51.52273,-0.148405,drhaus@drhausdermatology.com,0207 935 6358,www.drhausdermatology.com,3,0
+710,,20 Welbeck Street,,London,,W1G 8ED,gb,51.517854,-0.149325,info@thewelbeckclinic.co.uk,020 7486 8100,www.thewelbeckclinic.co.uk,3,0
+711,,25 Wimpole Street,,London,,W1G 8GL,gb,51.518721,-0.14827,info@drpragerclinic.com,020 7323 3660,www.drpragerclinic.com,3,0
+712,Suite 2,30 Harley Street,,Marylebone,LND,W1G 9PW,gb,51.518492,-0.146518,basim@bm-plasticsurgery.com,020 7637 9595,www.bm-plasticsurgery.com,3,0
+713,Progress House,17 Cecil Road,,Altrincham,CHS,WA14 4QN,gb,53.388758,-2.367887,info@re-enhance.com,0800 077 8092,www.re-enhance.com,3,0
+714,,5 Victoria Road,,Grappenhall,CHS,WA4 2EW,gb,53.376914,-2.557517,andrew.winter@ntlworld.com,01925 604159,www.andrewwinter.co.uk,3,0
+715,Murdishaw Health Centre,Gorsewood Road,,Runcorn,CHS,WA7 6ES,gb,53.324143,-2.662519,info@ezinabeauty.co.uk,01928 713270,Currently not available,3,0
+716,,3 Norlands Park,,Widnes,MSY,WA8 5BH,gb,53.393558,-2.743104,joaniem@sky.com,07521 156027,Currently not available,3,0
+717,,Mesnes Street,,Wigan,LAN,WN1 1QJ,gb,53.550449,-2.632696,info@northwestaesthetics.co.uk,01925 909003,www.northwestaesthetics.co.uk,3,0
+718,,23 Bryn Street,,Ashton-In-Makerfield,LAN,WN4 9AX,gb,53.487588,-2.639095,boutiquedental23@gmail.com,01942 727465,www.boutiquedental23.com,3,0
+719,Chase House,"High Green Court, New Hall Street",,Cannock,WMD,WS11 1GR,gb,52.688674,-2.031942,kyrasoulcareaesthetics@yahoo.com,01543 572838,www.soulcareaesthetics.com,3,0
+720,,2 Mary Slater Road,,Lichfield,STS,WS13 6FG,gb,52.677316,-1.834015,skingenious.hq@hotmail.com,07790 002219,Currently not available,3,0
+721,,2 Compton Road,,Wolverhampton,WMD,WV3 9PH,gb,52.585679,-2.140703,contactus@sknclinics.co.uk,0121 5678100,www.sknclinics.co.uk,3,0
+722,,Annesley Bridge,,Dublin,,,gb,53.36023,-6.238247,info@annesleymedical.com,00353 1836 3126,www.annesleymedical.com,3,0
+723,The Corn Store,13 St Augustine Street,,Galway,,,gb,53.27213,-9.051461,clinics@bodybenefits.biz,00353 9156 7500,www.bodybenefits.biz,3,0
+724,,12 Morehampton Road,,Donnybrook,,,gb,0,0,info@excellencemedical.ie,00353 1232 5528,www.excellencemedical.ie,0,0
+725,First Floor,Shamrock Plaza,,Carlow,,,gb,0,0,info@faceworks.ie,00353 5991 86774,www.faceworks.ie,0,0
+726,,53  Kilbarrack Road,,Dublin,,,gb,53.388488,-6.151298,info@howthclinic.ie,00353 1806 3200,www.renaissanceskinclinic.ie,3,0
+727,,1 Lower Glenageary Road,,Dun Laoghaire,,,gb,53.281372,-6.134932,info@renewclinic.ie,00353 1661 9261,www.renewclinic.ie,3,0
+728,,8-9 Molesworth Street,,Dublin,,,gb,53.341237,-6.256805,info@therapieclinic.com,00353 1619 1450,www.therapieclinic.com,3,0
+729,,8 Molesworth Street,,Dublin,,,gb,53.341237,-6.256805,info@therapieclinic.com,00353 1619 1450,www.therapieclinic.com,3,0
+730,,Main Street,,Kanturk,,,gb,0,0,info@therapieclinic.com,00353 1619 1450,www.therapieclinic.com,0,0
+731,,31 Barronstrand Street,,Waterford,,,gb,52.261121,-7.111544,info@therapieclinic.com,00353 1619 1450,www.therapieclinic.com,3,0
+732,Skin Clinic,,,Drogheda,,,gb,53.850599,-6.53894,info@theskinclinic.ie,00353 4198 06320,www.theskinclinic.ie,3,0

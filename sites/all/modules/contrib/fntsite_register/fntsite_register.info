@@ -1,0 +1,7 @@
+name = "Fntsite Register"
+description = "A registration tidy up, written by JmOkay"
+core = 7.x
+package = "Custom"
+version = "7.x-1.x-dev"
+
+files[] = includes/FntsiteRegister.inc

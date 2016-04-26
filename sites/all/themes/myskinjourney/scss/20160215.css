@@ -1,0 +1,310 @@
+/* CUSTOM STYLES */
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+article {
+  z-index: 10;
+}
+.pane-title, .node-title  {
+  display: none;
+}
+.field-name-field-up-image {
+  cursor: pointer;
+}
+.field-type-text-with-summary {
+  z-index: 100;
+}
+.panel-pane {
+  position: relative;
+}
+
+/* OVERLAY */
+/*
+article:after {
+  content: " ";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1);
+}*/
+
+/* HEADER */
+article.node-home-page-header::after {
+  content: " ";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.node-home-page-header {
+  background-image: url("/sites/default/files/header-long.png") ;
+  background-position: 50% 0%;
+  height: 850px;
+}
+.node-home-page-header .field-type-text-with-summary {
+  float: none;
+  height: 100px;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+.field-name-field-title-image {
+  position: relative;
+  top: 120px;
+  text-align: center;
+  z-index: 100;
+}
+.node-home-page-header h2:nth-of-type(1) {
+  margin: 0px auto;
+  margin-top: 184px;
+  text-transform: none;
+  width: 246px;
+}
+.node-home-page-header h2:nth-of-type(2) {
+  margin: 245px auto 0px auto;
+  text-transform: none;
+  width: 274px;
+}
+#node-2 h2:nth-of-type(3) {
+  color: rgb(102, 102, 102);
+  margin: 0px auto;
+  margin-top: 240px;
+}
+#node-2 h2:nth-of-type(4) {
+  color: rgb(102, 102, 102);
+  margin: 0px auto;
+}
+#node-2 h2:nth-of-type(5) {
+  color: rgb(102, 102, 102);
+  margin: 0px auto;
+  padding-bottom: 155px;
+}
+
+/* Styles for screens that are at least 320px; */
+@media only screen and (min-width: 321px) {
+  #node-2 h2:nth-of-type(1) {
+    width: 400px;
+  }
+  #node-2 h2:nth-of-type(2) {
+    width: 400px;
+  }
+}
+
+/* SECTION FIELDS */
+.node-single-page-section {
+  height: 325px;
+  background-position: center center;
+  background-size: 100% 475px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.field-name-body, .field-name-field-expanded-body {
+  position: relative;
+  z-index: 1000;
+}
+.field-name-body h2 {
+  margin: 0;
+}
+.field-name-body p {
+  margin: 0 auto;
+  width: 260px;
+}
+.field-name-field-expand-image {
+  display: none;
+}
+.field-name-field-expanded-body {
+  display: none;
+}
+.field-name-field-expanded-body p {
+  margin: 10px 0;
+}
+.field-name-field-expanded-body a {
+  border: 1px solid #fff;
+  color: #fff;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+/* Styles for screens that are at least 320px; */
+@media only screen and (min-width: 321px) {
+  .field-name-body {
+    height: 100px;
+    position: absolute;
+  }
+  .field-name-field-expand-image {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -78px;
+    margin-top: -77px;
+    padding: 50px;
+    z-index: 100;
+  }
+}
+
+/* SECTIONS */
+
+.home-page-section-1 .pane-content article::after, .home-page-section-3 .pane-content article::after {
+  background-image: url("/sites/default/files/fade-to-right.png") ;
+  background-size: cover;
+  content: " ";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.home-page-section-2 .pane-content article::after, .home-page-section-4 .pane-content article::after {
+  background-image: url("/sites/default/files/fade-to-left.png") ;
+  background-size: cover;
+  content: " ";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.home-page-section-1 .field-type-text-with-summary {
+  height: 100px;
+  margin-top: -50px;
+  position: absolute;
+  text-align: center;
+  width: 400px;
+  top: 50%;
+}
+.home-page-section-2 .field-type-text-with-summary {
+  height: 100px;
+  margin-top: -50px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+}
+.home-page-section-3 .field-type-text-with-summary {
+  height: 100px;
+  margin-top: -50px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+}
+.home-page-section-4 .field-type-text-with-summary {
+  height: 100px;
+  margin-top: -50px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+}
+.home-page-section-4 .field-name-body p {
+}
+
+/* Styles for screens that are at least 320px; */
+@media only screen and (min-width: 321px) {
+  .field-type-text-with-summary {
+  }
+  .home-page-section-1 .field-type-text-with-summary  {
+    padding-left: 130px;
+    text-align: left;
+    width: 400px;
+  }
+  .home-page-section-1 .field-type-text-with-summary p {
+    float: left;
+    text-align: left;
+    top: 50%;
+    width: 400px;
+  }
+  .home-page-section-2 .field-type-text-with-summary {
+    float: right;
+    margin-right: 234px;
+    right: 0px;
+    text-align: left;
+    top: 50%;
+    width: 350px;
+  }
+  .home-page-section-3 .field-type-text-with-summary {
+    float: left;
+    margin-left: 130px;
+    text-align: left;
+    top: 50%;
+    width: 323px;
+  }
+  .home-page-section-2 .field-name-body h2 {
+    margin-left: 44px;
+  }
+  .home-page-section-3 .field-name-body h2 {
+    margin-left: 30px;
+  }
+  .home-page-section-4 .field-type-text-with-summary {
+      float: right;
+      margin-right: 132px;
+      right: 0px;
+      text-align: right;
+      top: 50%;
+      width: 270px;
+  }
+  .home-page-section-4 .field-type-text-with-summary p {
+      width: 280px;
+  }
+}
+
+
+/* FOOTER */
+.home-page-footer {
+  background: rgba(0, 0, 0, 0.5);
+  height: 400px;
+}
+.home-page-footer, .home-page-footer a {
+  color: #fff;
+}
+.home-page-footer .field-name-field-up-image {
+  margin: 50px auto 0 auto;
+  position: relative;
+  width: 51px;
+  z-index: 100;
+}
+.home-page-footer .field-name-body {
+  padding-top: 80px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+.home-page-footer .field-name-body p {
+  margin-top: 40px;
+  width: 100%;
+}
+/* Styles for screens that are at least 320px; */
+@media only screen and (min-width: 321px) {
+  .home-page-footer .field-name-field-up-image {
+    position: relative;
+    right: 100px;
+    text-align: right;
+    top: -15px;
+    width: 100%;
+    z-index: 100;
+  }
+}
+footer .menu {
+  text-align: center;
+}
+.menu li {
+  display: inline-block;
+}
+/* Welcome to Compass. Use this file to write IE specific override styles. */

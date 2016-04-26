@@ -1,0 +1,13 @@
+diff --git a/sites/all/modules/contrib/pdf_using_mpdf/pdf_using_mpdf.admin.inc b/sites/all/modules/contrib/pdf_using_mpdf/pdf_using_mpdf.admin.inc
+index b1a997e..4263f5d 100644
+--- a/sites/all/modules/contrib/pdf_using_mpdf/pdf_using_mpdf.admin.inc
++++ b/sites/all/modules/contrib/pdf_using_mpdf/pdf_using_mpdf.admin.inc
+@@ -195,7 +195,7 @@ function pdf_using_mpdf_config() {
+       ),
+       '#states' => array(
+         'visible' => array(
+-          ':input[name="pdf_using_mpdf_watermark_option"]' => array('checked' => FALSE),
++          ':input[name="pdf_using_mpdf_watermark_option"]' => array('checked' => TRUE),
+         ),
+       ),
+     );

@@ -1,0 +1,23 @@
+jQuery(document).ready(function(){
+	jQuery('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+	    var target = this.hash;
+	    var $target = jQuery(target);
+    jQuery('html, body').stop().animate({
+	        'scrollTop': $target.offset().top - 20
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+
+       
+    //bhi new
+    var highestBox = 0;
+     jQuery('.content_holder .col_25').each(function(){  
+                if(jQuery(this).height() > highestBox){  
+                highestBox = jQuery(this).height();  
+        }
+    });    
+    jQuery('.content_holder .col_25').height(highestBox);
+    	
+});

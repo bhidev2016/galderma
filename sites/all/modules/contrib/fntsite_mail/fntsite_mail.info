@@ -1,0 +1,12 @@
+name = "Fntsite Mail"
+description = "A mail and templating system, written by JmOkay"
+core = 7.x
+package = "Custom"
+version = "7.x-1.x-dev"
+
+files[] = includes/FntsiteDecoratorTemplate.inc
+files[] = includes/FntsiteDecoratorUser.inc
+files[] = includes/FntsiteMail.inc
+files[] = includes/FntsiteMailSend.inc
+files[] = includes/FntsiteMailNotify.inc
+

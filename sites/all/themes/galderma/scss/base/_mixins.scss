@@ -1,0 +1,99 @@
+// @file
+// Place your mixins here. Feel free to roll your own mixins. Or nuke what is
+// currently here.
+
+//
+// Mixin: Base Utility
+//
+@mixin stage {
+  position: absolute;
+  left: -999em;
+}
+
+@mixin unstage {
+  position: static;
+  left: auto;
+}
+
+@mixin title_box {
+  display: inline-block;
+  background-color: $color--blue__dark;
+  padding: 0.3em 0.8em 0.2em 0.8em;
+  //padding: 0.3em 0.8em;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: white;
+  font-weight: bold;
+  a {
+    color: inherit;
+    padding: 0;
+    border: none;
+    font-size: 1em;
+    font-weight: inherit;
+    margin: 0;
+
+  }
+}
+
+@mixin link_text {
+  display: inline-block;
+  background-color: transparent;
+  padding: 0.5em;
+  padding-bottom: 0.4em;
+  text-transform: uppercase;
+  color: $color--blue__dark;
+  font-weight: normal;
+  text-decoration: none;
+  border: solid 1px $color--blue__dark;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+@mixin caption_title {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@mixin caption_body {
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+  max-width: 14em;
+  margin: 1em auto;
+  margin-bottom: 9em;
+  line-height: 1.8em;
+  font-weight: bold;
+  display: block;
+  height: 8em;
+}
+
+@mixin button {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  @include link_text;
+  margin-left: auto;
+  margin-right: auto;
+  width: 9.6em;
+  color: white;
+  border-color: white;
+  display: block;
+}
+
+@mixin left_right_gradient {
+
+  @include background-image(
+                  linear-gradient(to right,
+                          rgba(128, 128, 128, 0.55),
+                          rgba(128, 128, 128, 0.55),
+                          rgba(255, 255, 255, 0),
+                          rgba(255, 255, 255, 0)
+                  )
+  );
+}

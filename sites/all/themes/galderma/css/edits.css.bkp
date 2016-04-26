@@ -1,0 +1,230 @@
+/* line 53, ../sass/edits.scss */
+.button-group {
+  z-index: 999 !important;
+}
+
+/* line 57, ../sass/edits.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 60, ../sass/edits.scss */
+.margin-top-mid {
+  margin-top: 40px;
+}
+
+/* line 66, ../sass/edits.scss */
+.btn-default a:link {
+  display: inline-block;
+  font-size: 13px;
+  padding: 10px 12px;
+  line-height: 1;
+  border: 1px solid transparent;
+}
+/* line 75, ../sass/edits.scss */
+.btn-default.btn-blue a:link {
+  border-color: #002d72;
+  color: #002d72;
+}
+/* line 83, ../sass/edits.scss */
+.btn-default.btn-big a:link {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0.5em 0.7em;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 95, ../sass/edits.scss */
+  .two-columns-aside > p {
+    float: left;
+  }
+  /* line 99, ../sass/edits.scss */
+  .two-columns-aside > p:first-of-type {
+    width: 80%;
+  }
+  /* line 105, ../sass/edits.scss */
+  .two-columns-aside > p:last-child {
+    width: 20%;
+    padding: 0 15px;
+  }
+}
+/* line 118, ../sass/edits.scss */
+.two-columns-aside > p:last-child > a:link {
+  text-align: center;
+  max-width: 130px;
+  margin: 0 auto;
+  display: block;
+}
+@media screen and (max-width: 1199px) {
+  /* line 93, ../sass/edits.scss */
+  .two-columns-aside {
+    padding: 0 2em;
+  }
+}
+
+/* line 132, ../sass/edits.scss */
+.mask-shadow {
+  padding: 5px 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+100&0.3+1,0+42,0+100 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(3, 3, 3, 0.1) 1%, rgba(107, 107, 107, 0) 42%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(3, 3, 3, 0.1) 1%, rgba(107, 107, 107, 0) 42%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(3, 3, 3, 0.1) 1%, rgba(107, 107, 107, 0) 42%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#00ffffff',GradientType=0 );
+  /* IE6-9 */
+}
+/* line 139, ../sass/edits.scss */
+.mask-shadow .view-content {
+  margin-top: 60px;
+}
+/* line 143, ../sass/edits.scss */
+.mask-shadow .block-title {
+  margin-top: 50px;
+}
+
+/* line 150, ../sass/edits.scss */
+.col-md-6 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 1025px) {
+  /* line 150, ../sass/edits.scss */
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+}
+
+/* line 161, ../sass/edits.scss */
+.article-title h3 {
+  display: inline-block;
+  background-color: #002d72;
+  padding: 0.3em 0.8em 0.2em 0.8em;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 172, ../sass/edits.scss */
+  .block--icon-link .views-row {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 30%;
+  }
+}
+
+/* line 182, ../sass/edits.scss */
+.block--icon-link .views-field-field-icon-title h4 {
+  max-width: 100%;
+}
+
+/* line 188, ../sass/edits.scss */
+.views-row .views-field-field-link {
+  margin-top: 30px;
+}
+
+/* line 194, ../sass/edits.scss */
+body {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1310px;
+}
+/* line 200, ../sass/edits.scss */
+body .subfooter {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* line 206, ../sass/edits.scss */
+body.node-type-restore-page .field-name-field-caption {
+  margin-bottom: 1em;
+}
+
+/* line 210, ../sass/edits.scss */
+.button-group {
+  top: 100px;
+}
+
+/* line 220, ../sass/edits.scss */
+.panel {
+  border-color: #000;
+  padding: 15px;
+  background: #fff;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 227, ../sass/edits.scss */
+  .block--portfolio .views-row-even {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* line 237, ../sass/edits.scss */
+.cta-common p {
+  font-size: 20px;
+  color: #002d72;
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  /* line 237, ../sass/edits.scss */
+  .cta-common p {
+    padding: 0 40px;
+  }
+}
+/* line 246, ../sass/edits.scss */
+.cta-common a:link {
+  max-width: none !important;
+  width: auto !important;
+}
+
+/* line 254, ../sass/edits.scss */
+.move-image-up .col-2 img {
+  margin-top: -80px;
+}
+
+
+/*updated-nvb*/
+.two-box .two-col .col-2 img{
+  float:right;
+}
+.two-box {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.two-box .article-title h3, .two-box h3{
+  width:50%;
+}
+.two-box h3{
+  margin-top:30px;
+}
+.two-box  img{
+  padding-top:30px;
+  padding-bottom:30px;
+}
+.two-box-bottom .views-field-field-display-title h3{
+  width:100%;
+}
+.two-box-bottom .views-row-even{
+  background-color:white!important;
+  flex-direction: row!important;
+}
+
+.two-box-bottom .views-row{
+      align-items: flex-start;
+      flex-direction: row-reverse;
+}
+.two-box-bottom .views-field-nothing{
+  padding-top:30px;
+}
+.two-box-bottom .views-row-even .views-field-body{
+      color: #767674!important;
+}

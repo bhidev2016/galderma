@@ -1,0 +1,9 @@
+/* Welcome to Compass. Use this file to write IE specific override styles. */
+/* IE10+ CSS styles go here */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* line 44, ../scss/ie.scss */
+  .article.node-home-page-header .field-name-field-line-3 {
+    margin-top: 160px;
+    background-color: #000;
+  }
+}

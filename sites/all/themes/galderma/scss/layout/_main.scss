@@ -1,0 +1,760 @@
+// Non-modular or client styles for the .l-content region.
+
+.l-main {
+}
+
+.node {
+    text-align: center;
+    font-size: 1.6em;
+    max-width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 12em;
+}
+
+.body {
+}
+
+.image {
+}
+
+.breadcrumbs {
+    display: none;
+}
+
+.box--title {
+    @include title_box();
+}
+
+body.admin-menu {
+    .page {
+        margin-top: -29px;
+    }
+}
+
+ul.button-group {
+    position: absolute;
+}
+
+.not-logged-in {
+    .pre-top-bar-section {
+        height: 61px;
+    }
+}
+
+.button-group {
+
+}
+
+body {
+    //background-size: 1280px auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+body.node-type-homepage {
+    background-image: url(../images/background/background_homepage.jpg);
+    #page-title {
+        display: none;
+    }
+    .node-homepage {
+        //position: absolute;
+        margin-top: 9.5em;
+        color: white;
+        .field-name-field-caption-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0.4em;
+        }
+        .field-name-body {
+            font-size: 1.4rem;
+            &::after {
+                background-image: url(../../galderma/images/menu/menu_hexagon_down.png);
+                background-size: 60px 65px;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                display: inline-block;
+                width: 100%;
+                height: 75px;
+                content: "";
+            }
+        }
+    }
+}
+
+body.page-node-40, body.node-type-event {
+
+    background-image: url(../images/background/background_events.jpg);
+
+    article {
+        display: none;
+    }
+    header::after {
+        display: none;
+    }
+    #page-title {
+        display: none;
+    }
+}
+
+body.node-type-privacy-policy, body.page-templates, body.section-users, body.page-maillog-details {
+
+    background-image: url(../images/background/background_register.jpg);
+
+    #page-title {
+        @include left_right_gradient;
+        font-size: 2rem;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        display: block;
+        width: 100%;
+        margin-bottom: 9em;
+    }
+    .node-privacy-policy {
+        font-size: 1rem;
+        max-width: 43em;
+        text-align: left;
+        margin-top: 13em;
+    }
+    h3 {
+        font-weight: bold;
+        color: $color--text__dark;
+        font-size: 1.4rem;
+    }
+    ul {
+        list-style-position: inside;
+    }
+    main {
+        a {
+            color: $color--text__dark;
+        }
+    }
+}
+
+body.page-maillog-details {
+    .field {
+        margin-left: 14em;
+    }
+}
+
+body.section-users {
+    .entity-profile2 {
+        max-width: 20em;
+        > .content {
+            display: flex;
+            flex-direction: column;
+            .field {
+                display: inline-block;
+                .field-label {
+                    display: inline-block;
+                    font-weight: bold;
+
+                }
+            }
+            h2 {
+                color: $color--text__dark
+            }
+            ul {
+                display: inline-block;
+                li {
+                    margin-left: 16em;
+                }
+            }
+        }
+    }
+
+}
+
+body.node-type-restore-page {
+    //background-image: url(../images/background/our-story-head-bg.png);
+    #page-title {
+        padding: 0;
+        width: 30em;
+        @include caption_title;
+
+    }
+    .field-name-field-caption {
+        @include caption_body;
+    }
+}
+
+body.node-type-personal-development-page {
+    background-image: url(../images/background/background_personal_development.jpg);
+    #page-title {
+        padding: 0;
+        width: 30em;
+        @include caption_title;
+
+    }
+    .field-name-field-caption {
+        @include caption_body;
+        max-width: 19em;
+    }
+}
+
+body.node-type-product-science-page {
+    //background-color: rgba(255, 168, 9, 0.32);
+    //.node-product-science-page {
+    //    background-color: rgba(22, 70, 255, 0.36);
+    //    margin-bottom: 9em;
+    //}
+    #page-title {
+        padding: 0;
+        width: 30em;
+        @include caption_title;
+
+    }
+    .field-name-field-caption {
+        @include caption_body;
+        max-width: 18em;
+        margin-bottom: 2em;
+
+    }
+}
+
+// restylane enhance page
+body.page-node-74 {
+    background-image: url(../images/background/background_enhance.jpg);
+
+}
+
+// restylane restore page
+body.page-node-58 {
+    background-image: url(../images/background/background_restore.jpg);
+
+}
+
+// restylane refresh page
+body.page-node-77 {
+    background-image: url(../images/background/background_restore.jpg);
+
+}
+
+body.front, body.page-user-register, body.page-user-password {
+    background-image: url(../images/background/background_register.jpg);
+    .button-group {
+        display: none;
+    }
+    .alert-box {
+        &.alert{
+            background-color: $color--blue__dark;
+            border: solid 1px darken($color--blue__dark, 30%);
+        }
+        &.success{
+            background-color: $color--blue__dark;
+            border: solid 1px darken($color--blue__dark, 30%);
+        }
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+    }
+    @media only screen and (min-width: 500px) {
+        .top-bar {
+            min-height: 4em;
+            height: auto;
+            &::after {
+                content:'';
+                border: none;
+            }
+        }
+    }
+
+    .block-block-2 {
+        text-align: center;
+        font-size: 1.2rem;
+        color: white;
+        h2 {
+            text-transform: uppercase;
+            font-size: 1.8rem;
+        }
+        p {
+            max-width: 18em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    div.main {
+        > h1.title {
+            display: none;
+        }
+    }
+
+    #user-login, #user-register-form, #user-pass {
+        font-size: 0.9em;
+        padding: 1rem 0rem 0.5rem 0rem;
+        > div {
+            //display: flex;
+            //justify-content: center;
+            //flex-direction: column;
+
+        }
+        //width: 55em;
+        //margin-left: auto;
+        //margin-right: auto;
+
+        h3.title--sign-in {
+            @include title_box();
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding: 0.2em;
+            //padding: 0.4em 0.9em 0.3em 0.9em;
+            font-size: 1.4em;
+        }
+        .form-item {
+            width: 21em;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0em;
+            margin-top: 0;
+            margin-bottom: 0;
+            input, select, .extra-row-text {
+                margin-top: 0;
+                margin-bottom: 0;
+                background-color: $color-registration--background;
+                color: white;
+                padding-left: 1em;
+                border: 1px solid $color-registration--border;
+                line-height: 1.9rem;
+                font-size: 0.9rem;
+                &::-webkit-input-placeholder {
+                    color: white;
+                }
+
+                &::-moz-placeholder {
+                    color: white;
+                }
+
+                &:-moz-placeholder {
+                    color: white;
+                }
+
+                &:-ms-input-placeholder {
+                    color: white;
+                }
+                &.error {
+                    background-color: rgb(255, 134, 139);
+                }
+            }
+            .extra-row-text {
+                padding-top: 0.18em;
+                padding-bottom: 0.18em;
+            }
+
+
+        }
+
+        #user-login {
+
+        }
+
+        #edit-title-text-more {
+            //margin-left: -10em;
+            width: 55em;
+            text-transform: uppercase;
+            text-align: center;
+            label {
+                display: block;
+            }
+        }
+
+        #edit-request-new-password {
+            position: relative;
+            top: 2em;
+            text-align: center;
+            font-size: 0.8rem;
+            line-height: 1em;
+            a {
+                position: relative;
+                top: 1em;
+                color: white;
+                text-decoration: underline;
+            }
+        }
+
+        label, span.has-tip {
+            display: none;
+        }
+
+        .form-type-checkbox {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            //line-height: 2em;
+            background-color: $color-registration--background__boolean;
+            border: solid 1px $color-registration--border;
+            color: white;
+            padding: 0.5em;
+            padding-left: 1em;
+            label {
+                color: inherit;
+                line-height: 1.3em;
+                max-width: 15em;
+                display: inline;
+                font-size: 0.9rem;
+            }
+            input[type="checkbox"] {
+                background-color: red;
+                outline-color: indigo;
+                @include border-radius(50px);
+                font-size: 1rem;
+                width:1.5em;
+                height:1.5em;
+                padding: 0em;
+                text-align: right;
+                margin: 0px;
+
+            }
+        }
+
+    }
+
+    #user-login, #user-pass {
+        @include background-image(
+                        linear-gradient(to right,
+                                rgba(128, 128, 128, 0.55),
+                                rgba(128, 128, 128, 0.55),
+                                rgba(255, 255, 255, 0),
+                                rgba(255, 255, 255, 0)
+                        )
+        );
+
+    }
+
+    #user-register-form {
+        width: 100%;
+        margin-bottom: 5em;
+        .form-item {
+            input {
+                display: inline-block;
+            }
+            div.description {
+                text-align: right;
+                margin-right: 3em;
+            }
+        }
+    }
+
+}
+
+#user-pass {
+    //width: 30em;
+    margin-top: 7em;
+    margin-bottom: 30em;
+    button {
+        @include button;
+        width: 15.5em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+body.page-user-password #user-pass .form-item {
+    margin-top: 1.2em;
+    width: 30em;
+}
+
+#user-login {
+    button {
+        @include button;
+        display: block;
+        position: relative;
+        top: -3em;
+        left: -6.8em;
+    }
+    #edit-register-now {
+        @include button;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        width: 12em;
+        position: relative;
+        left: 5.6em;
+        color: white;
+        top: 0.4em;
+
+        border-color: white;
+        a {
+            color: inherit;
+        }
+
+    }
+}
+
+
+#user-register-form {
+    &::before {
+        content:'Register';
+        @include title_box;
+        display: block;
+        width: 19rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 0.4em 0.9em 0.3em 0.9em;
+        font-size: 1.4em;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        #edit-profile-communications {
+            order: 10;
+        }
+        #edit-profile-interests {
+            order: 20;
+        }
+        #edit-account {
+            order: 15;
+        }
+        #edit-profile-health-professional {
+            order: 5;
+        }
+        #edit-legal {
+            order: 30;
+        }
+        #edit-submit {
+            order: 35;
+        }
+        //#edit-profile-main {
+        //    display: none;
+        //}
+    }
+
+    fieldset {
+        border: none;
+        legend {
+            font-size: 1.4em;
+            text-align: center;
+            background: none;
+            text-transform: uppercase;
+            color: $color--text__dark;
+        }
+    }
+
+    legend {
+        max-width: 20em;
+    }
+
+    //.form--field__required {
+    //    background-color: red;
+    //    input, select {
+    //        background-color: rgba(255, 0, 0, 0.48);
+    //    }
+    //}
+
+    #edit-account {
+        &::before {
+            content:'Your login details';
+            display: inline-block;
+            //background-color: red;
+            //height: 5em;
+            margin-top: 1em;
+            margin-bottom: 0.8em;
+            width: 20em;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.4em;
+            text-align: center;
+            background: none;
+            text-transform: uppercase;
+            color: $color--text__dark;
+            font-weight: bold;
+        }
+    }
+
+
+    #edit-profile-health-professional {
+
+        div.fieldset-wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+    #edit-profile-interests {
+        padding-top: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        //legend {
+        //    display: none;
+        //}
+    }
+
+    #edit-profile-main {
+        display: none;
+    }
+
+    #edit-profile-interests {
+        legend {
+            //margin-bottom: 1em;
+            span {
+                border: 1px solid $color-registration--border;
+                border-bottom: 2px solid $color-registration--border;
+                background-color: $color-registration--background;
+                color: white;
+                padding: 0.2em 1em  0.1em 1em;;
+                line-height: 1.9rem;
+                font-size: 0.9rem;
+                text-align: left;
+                text-transform: none;
+                margin: 0 auto;
+                width: 21em;
+                display: inline-block;
+                font-weight: normal;
+            }
+        }
+
+    }
+
+    #edit-legal {
+        font-size: 0.8rem;
+        max-width: 24em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        paddding-top: 0em;
+        margin-top: 0em;
+        a {
+            font-size: inherit;
+            color: $color--text;
+            text-decoration: underline;
+        }
+        legend {
+            display: none;
+        }
+        .fieldset-wrapper {
+            display: flex;
+            &::after {
+                content: '* Required field';
+                //padding-top: em;
+                text-align: left;
+                margin-left: 1.6em;
+                margin-bottom: 0.5em;
+            }
+            .form-item-extras-2 {
+                order: 30;
+            }
+            .form-item-extras-1 {
+                order: 20;
+            }
+            .form-item-legal-accept {
+                order: 10;
+            }
+
+        }
+        .form-item {
+            //margin-top: 0;
+            background-color: transparent;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            color: $color--text;
+            border: none;
+            label {
+                font-size: 0.8rem;
+                max-width: none;
+                text-align: left;
+                margin-left: 0.5em;
+                a {
+                    font-size: inherit;
+                    color: $color--text;
+                    text-decoration: underline;
+                }
+                .form-required {
+                   display: none;
+                }
+            }
+            //input.error {
+            //    color: red;
+            //}
+            &.form-item-extras-2 {
+                //background-color: red;
+                input ~ label {
+                    //background-color: purple;
+                }
+                .extras-2--checkbox__establishing {
+                    display: none;
+                }
+                .extras-2--checkbox__establishing ~ label {
+                    display: none;
+                }
+                .extras-2--checkbox__notrequired {
+                    display: none;
+                }
+                .extras-2--checkbox__notrequired ~ label {
+                    display: none;
+                }
+                input {
+                    margin: -0.15em;
+                    width: 1.5em;
+                }
+            }
+        }
+    }
+
+    select {
+        border-radius: 0;
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        width: 100%;
+        font-family: $ff-gotham;
+        padding: 0.1em;
+        padding-bottom: 0em;
+
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAMAAADaUYZlAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAD///////////////////////////////////////////////////////////////8AAADx3eDuAAAAEHRSTlMAHznG/mgs6iBkvQQK8F2SFaX/zgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAA8SURBVAjXVchJEgAQDETRRoiZ+59WxVT0qt+H0riTb8geOiaPQCc47jEBdgdhlrPC5QoPZygPJXwEatscefsB2zNgCL0AAAAASUVORK5CYII=);
+            background-position: right 0.6em top 50%;
+            background-repeat: no-repeat;
+            background-size: 18px 10px;
+        }
+
+
+    }
+    #edit-profile-health-professional-field-medical-body {
+        select{
+            background-image: none;
+        }
+    }
+
+    //.form-item-name {
+    //    //display: none;
+    //}
+
+    button {
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        @include link_text;
+        margin-left: auto;
+        margin-right: auto;
+        width: 11em;
+        padding-top: 0.55em;
+        border-color: $color--blue__dark;
+        color: $color--blue__dark;
+    }
+
+}
+
+body.page-user-register #user-register-form .form--field__required .form-item {
+    input, select {
+        background-color: rgb(255, 134, 139);
+    }
+}
+
+.front.not-logged-in.page-user {
+    .alert-box {
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        line-height: 1.3em;
+    }
+}
+

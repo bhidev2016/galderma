@@ -1,0 +1,281 @@
+<?php
+/**
+ * @file
+ * A registration tidy up for specific requirements, written by JmOkay.
+ */
+
+/**
+ * Implements hook_mail_alter().
+ */
+function fntsite_register_mail_alter(&$message) {
+  // Remove mail.
+  // These messages have been expanded upon greatly and are sent as from
+  // the custom module fntsite_mail.
+  if ($message['id'] == 'user_register_pending_approval_admin'){
+    $message['send'] = FALSE;
+  }
+  if ($message['id'] == 'user_register_pending_approval'){
+    $message['send'] = FALSE;
+  }
+}
+
+
+
+function fntsite_register_process_form(&$variables, $hook) {
+
+  if ($variables['element']['#form_id'] == 'user_pass'){
+
+    $html_text = $variables['element']['#children'];
+
+    $Htxt = new FntsiteRegister($html_text);
+    $Htxt
+      ->addPlaceholder('edit-name', 'Please enter your E-mail address to reset your password')
+    ;
+
+    $variables['element']['#children'] = $Htxt->getHtml();
+
+  }
+  if ($variables['element']['#form_id'] == 'user_register_form'){
+
+    $html_text = $variables['element']['#children'];
+
+    $Htxt = new FntsiteRegister($html_text);
+    $Htxt
+      ->addPlaceholderToProfileField('health professional', 'street', 'Street*')
+      ->addPlaceholderToProfileField('health professional', 'postcode', 'Postcode')
+      ->addPlaceholderToProfileField('health professional', 'website', 'Website')
+      ->addPlaceholderToProfileField('health professional', 'first name', 'First name*')
+      ->addPlaceholderToProfileField('health professional', 'surname', 'Last name*')
+      ->addPlaceholderToProfileField('health professional', 'pin number', 'PIN Number (if medical professional)')
+      ->addPlaceholderToProfileField('health professional', 'clinic name', 'Clinic name*')
+      ->addPlaceholderToProfileField('health professional', 'building name number', 'Building name / number*')
+      ->addPlaceholderToProfileField('health professional', 'town city', 'Town / City*')
+      ->addPlaceholderToProfileField('communications', 'mobile', 'Mobile telephone')
+      ->addPlaceholderToProfileField('communications', 'landline', 'Landline telephone')
+      ->addPlaceholder('edit-name', 'Username')
+    ;
+
+    $variables['element']['#children'] = $Htxt->getHtml();
+
+  }
+
+}
+
+
+/**
+ * Implements hook_module_implements_alter().
+ *
+ * Make sure the register_form_alter is done after modules such as Profile2.
+ *
+ * @param $implementations
+ * @param $hook
+ */
+function fntsite_register_module_implements_alter(&$implementations, $hook) {
+  if ($hook == 'form_alter') {
+    // Move our hook implementation to the bottom.
+    $group = $implementations['fntsite_register'];
+    unset($implementations['fntsite_register']);
+    $implementations['fntsite_register'] = $group;
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function fntsite_register_form_alter(&$form, &$form_state, $form_id) {
+
+  if ($form_id == 'user_pass') {
+    $form['name']['#size'] = 100;
+  }
+
+  if ($form['#form_id'] == 'user_register_form') {
+
+    $form['username']['#attributes']['placeholder'] = 'Email address';
+    $form['account']['mail']['#attributes']['placeholder']
+      = 'Your email (this will be your username)';
+
+    $form['account']['conf_mail'] = array (
+      '#type' => 'textfield',
+      '#title' => 'E-mail confirmation',
+      '#required' => true,
+      '#maxlength' => 254,
+      '#description' => 'Confirmation email address.',
+      '#attributes' => array('placeholder' => 'Confirm email'),
+    );
+//    ;['#attributes']['placeholder']
+//      = 'Confirm email';
+
+    $form['profile_health_professional']['field_profession'][LANGUAGE_NONE]['#options']['_none'] =  t('Profession*');
+    $form['profile_health_professional']['field_medical_body'][LANGUAGE_NONE]['#options']['_none'] = t('Medical Body (if medical profession)');
+    $form['profile_health_professional']['field_county'][LANGUAGE_NONE]['#options']['_none'] = t('County');
+    $form['profile_health_professional']['field_country'][LANGUAGE_NONE]['#options']['_none'] = t('Country*');
+    $form['profile_health_professional']['field_title'][LANGUAGE_NONE]['#options']['_none'] = t('Title*');
+
+
+    $form['profile_communications']['please_contact'] = array(
+      '#markup' => '<div class="form-item"><div class="extra-row-text">Please contact me with...</div></div>',
+      '#weight' => '3',
+    );
+
+    $form['profile_communications']['#title'] = 'Your communication preferences';
+    $form['profile_interests']['#title'] = 'Products of interest';
+    $form['actions']['submit']['#value'] = 'Register now';
+
+    $form['legal']['extras-2']['#attributes'] = array('class' => array('extras-2--checkbox__establishing'));
+    if (isset($form_state['input']['profile_health_professional']['field_profession'][LANGUAGE_NONE])){
+
+      $input_profession = $form_state['input']['profile_health_professional']['field_profession'][LANGUAGE_NONE];
+
+      if ($input_profession == '_none'){
+        $form['legal']['extras-2']['#required'] = false;
+      }
+      elseif ($input_profession == '13'){
+        // i.e. anything other than:  Non Medical Aesthetic Clinic Staff
+        $form['legal']['extras-2']['#required'] = false;
+        $form['legal']['extras-2']['#attributes'] = array('class' => array('extras-2--checkbox__notrequired'));
+      } else {
+        $form['legal']['extras-2']['#required'] = true;
+        // all other professions need to tick box.
+        $form['legal']['extras-2']['#attributes'] = array('class' => array('extras-2--checkbox__required'));
+
+        if (isset($form_state['input']['profile_health_professional']['field_medical_body'][LANGUAGE_NONE])) {
+          if ($form_state['input']['profile_health_professional']['field_medical_body'][LANGUAGE_NONE] == '_none') {
+            $form['profile_health_professional']['field_medical_body']['#attributes']['class'][] = 'form--field__required';
+          }
+        }
+
+        if (isset($form_state['input']['profile_health_professional']['field_pin_number'][LANGUAGE_NONE][0]['value'])){
+          if ($form_state['input']['profile_health_professional']['field_pin_number'][LANGUAGE_NONE][0]['value'] == '') {
+            $form['profile_health_professional']['field_pin_number']['#attributes']['class'][] = 'form--field__required';
+          }
+        }
+      }
+    }
+
+    if (isset($form_state['input']['profile_health_professional']['field_country']['und'])){
+      if ($form_state['input']['profile_health_professional']['field_country']['und'] == 20){
+        if (isset($form_state['input']['profile_health_professional']['field_postcode']['und'][0]['value'])){
+          if ($form_state['input']['profile_health_professional']['field_postcode']['und'][0]['value'] == ''){
+            $form['profile_health_professional']['field_postcode']['#attributes']['class'][] = 'form--field__required';
+          }
+        }
+      }
+    }
+
+
+    $form['#validate'][] = 'fntsite_register_user_register_validate';
+
+
+
+  }
+
+  if ($form['#form_id'] == 'user_login') {
+
+    $form['title_sign_in'] = array(
+      '#type' => 'item',
+      '#markup' => '<h3 class="title--sign-in">' . t('Sign in') . '</h3>',
+      '#weight' => -5,
+    );
+    $form['register_now'] = array(
+      '#type' => 'item',
+      '#markup' => l('Register now', 'user/register'),
+    );
+
+    $form['request_new_password'] = array(
+      '#type' => 'item',
+      '#markup' => l('Forgot password?', 'user/password'),
+    );
+
+    $form['name']['#size'] = 48;
+    $form['name']['#attributes'] = array('placeholder' => 'Email address');
+    $form['pass']['#size'] = 48;
+    $form['pass']['#attributes'] = array('placeholder' => 'Password');
+
+    $form['actions']['submit']['#value'] = 'Sign in';
+    $form['actions']['submit']['#weight'] = '20';
+
+  }
+}
+
+/**
+ * @param $form
+ * @param $form_state
+ */
+function fntsite_register_user_register_validate($form, &$form_state){
+
+//  $form_state['values']['name'] = $form_state['values']['mail'];
+
+  if ($form_state['values']['mail'] <> $form_state['values']['conf_mail']){
+    form_set_error('field_conf_email', 'Your confirmation email does not match your email.');
+  }
+
+//  $values = $form_state['values'];
+  $pros = $form_state['values']['profile_health_professional'];
+
+  // As per requirement document, only make this field mandatory for certain
+  // professions:
+  $professions_require = array(7, 8, 9, 10, 11, 12);
+
+  if (in_array(
+    $pros['field_profession'][LANGUAGE_NONE][0]['tid'], $professions_require
+  )) {
+    if ($pros['field_medical_body'][LANGUAGE_NONE][0]['tid'] == null){
+      $form['profile_health_professional']['field_medical_body']['#required'] = true;
+      form_set_error('field_medical_body', 'Medical Body is required.');
+    }
+    if ($pros['field_pin_number'][LANGUAGE_NONE][0]['value'] == ''){
+      $form['profile_health_professional']['field_pin_number']['#required'] = true;
+      form_set_error('field_pin_number', 'PIN Number is required.');
+    }
+  } else  {
+    $form['profile_health_professional']['field_medical_body']['#required'] = false;
+
+  }
+//  else {
+//    $jjames = 1;
+//  }
+
+
+
+  // As per requirement document, only make this field mandatory for certain
+  // countries:
+  $countries_require = array(20);
+
+  if (in_array($pros['field_country'][LANGUAGE_NONE][0]['tid'], $countries_require)) {
+    if ($pros['field_postcode'][LANGUAGE_NONE][0]['value'] == ''){
+      form_set_error('field_postcode', 'Postcode is required.');
+    }
+  }
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function fntsite_register_user_login(&$edit, $account) {
+
+  $edit['redirect'] = 'welcome';
+
+}
+
+/**
+ * Implements hook_menu_alter().
+ */
+/**
+ * Implements hook_url_outbound_alter().
+ */
+function fntsite_register_url_outbound_alter(&$path, &$options, $original_path) {
+
+
+  if (user_has_role(2)){
+    // i.e. an authenticated user.
+    if ($original_path == '<front>'){
+      $path = 'welcome';
+    }
+
+  }
+
+}
+
+function fntsite_register_status_messages(){
+  $jjames = 1;
+}

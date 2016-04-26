@@ -1,0 +1,177 @@
+// Non-modular or client styles for .l-footer region.
+.page {
+    footer {
+        margin-top: 3em;
+        background-color: white;
+        padding: 0em;
+        padding-top: 5em;
+        border-top: solid 1px $color--text__dark;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.not-logged-in {
+    footer {
+        display: none;
+    }
+}
+
+.subfooter {
+    //background-color: #9c9c9c;
+    color: black;
+    h1, h2, h3, h4, h5, h6 {
+        color: black;
+    }
+}
+
+.l-footer {
+    background: none;
+    border: none;
+    max-width: none;
+}
+
+.l-footer-columns {
+}
+
+.block-menu-menu-about::before {
+    background-image: url(../../galderma/images/menu/menu_icon_about.png);
+}
+
+.block-menu-menu-menu-products::before {
+    background-image: url(../../galderma/images/menu/menu_icon_products.png);
+}
+
+.block-menu-menu-menu-personal-development::before {
+    background-image: url(../../galderma/images/menu/menu_icon_personal_development.png);
+}
+
+.block-menu-menu-menu-clinic-support::before {
+    background-image: url(../../galderma/images/menu/menu_icon_clinic_support.png);
+}
+
+.block-menu-menu-menu-patient-support::before {
+    background-image: url(../../galderma/images/menu/menu_icon_patient_support.png);
+}
+
+.block-menu-menu-menu-news::before {
+    background-image: url(../../galderma/images/menu/menu_icon_news.png);
+}
+
+.menu--footer {
+    margin: 3em 3em;
+    text-transform: uppercase;
+    width: 16rem;
+    position: relative;
+    &::before {
+        //background-image: url(../../galderma/images/menu/menu_about.png);
+        //background-size: 70px 70px;
+        background-size: 60px 65px;
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 100%;
+        height: 75px;
+        content: "";
+        position: relative;
+        top: -2em;
+    }
+    .block-title {
+        position: absolute;
+        top: -0.3em;
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: $color--text__dark;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        text-align: left;
+        max-width: 8em;
+        line-height: 1.1em;
+
+    }
+    li {
+        border-top: solid 2px $color--grey1__dark;
+        list-style-type: none;
+        padding: 0.8em 0em;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-image: url(../../galderma/images/menu/arrow_right.png);
+        background-size: 7px 12px;
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 50%;
+        a {
+            color: $color--text__dark;
+            width: 100%;
+            &:hover {
+                color: darken($color--text__dark, 15%);
+            }
+        }
+        &.last {
+            border-bottom: solid 2px $color--grey1__dark;
+        }
+        //&::after {
+        //    content: ">";
+        //    color: $color--grey1__dark;
+        //    font-weight: bold;
+        //}
+    }
+}
+
+.subfooter {
+    padding: 0em;
+    background-color: $color-footer--background;
+    color: white;
+    text-align: center;
+    &.large-12 {
+        &::after {
+            //background-image: url(../../galderma/images/menu/menu_hexagon_up.png);
+            background-size: 60px 65px;
+            background-position: 50% 20%;
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 100%;
+            height: 75px;
+            content: "";
+            padding-bottom: 8em;
+        }
+    }
+    ul.menu {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 5em 0em 2em 0em;
+        li {
+            padding: 0em 2em;
+            border-right: solid 1px white;
+            color: white;
+            text-transform: uppercase;
+            line-height: 0.9em;
+            a {
+                color: inherit;
+                padding: 0em;
+            }
+            &.last {
+                border-right: none;
+            }
+        }
+    }
+    section.block-block-1 {
+        //display: flex;
+        //justify-content: center;
+        //flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 60em;
+        p {
+            text-align: center;
+        }
+    }
+}

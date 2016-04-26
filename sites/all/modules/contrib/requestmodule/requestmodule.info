@@ -1,0 +1,12 @@
+name = requestmodule
+description = Module for request forms
+package = public-action
+version = VERSION
+core = 7.x
+files[] = requestmodule.module
+
+
+; Information added by drupal.org packaging script on 2016-04-21
+version = "7.0"
+project = "drupal"
+datestamp = "1269192313"
