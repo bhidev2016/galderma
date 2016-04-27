@@ -29,6 +29,7 @@ base theme = zurb_foundation
 ; For CSS users, load the app.css file:
 ;stylesheets[all][] = css/app.css
 ; Comment the app.css file (above) if you're using sass to preprocess css:
+stylesheets[all][] = css/css_overrides.css
 stylesheets[all][] = css/galderma.css
 stylesheets[all][] = css/edits.css
 
@@ -46,7 +47,7 @@ scripts[] = js/vendor/custom.modernizr.js
 ; If you prefer to have more control over which components are included you
 ; can comment this line and uncomment the ones below you want.
 scripts[] = js/foundation.min.js
-
+scripts[] = js/styling.js
 ; Foundation framework scripts (uncompressed).
 ;scripts[] = js/foundation/foundation.js
 ;scripts[] = js/foundation/foundation.abide.js
