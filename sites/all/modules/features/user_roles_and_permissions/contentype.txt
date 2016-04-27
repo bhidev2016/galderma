@@ -1,0 +1,1607 @@
+$data = array(
+  'bundles' => array(
+    'resource_centre' => (object) array(
+      'type' => 'resource_centre',
+      'name' => 'Resource Centre',
+      'base' => 'node_content',
+      'module' => 'node',
+      'description' => '',
+      'help' => '',
+      'has_title' => '1',
+      'title_label' => 'Title',
+      'custom' => '1',
+      'modified' => '1',
+      'locked' => '0',
+      'disabled' => '0',
+      'orig_type' => 'resource_centre',
+      'disabled_changed' => FALSE,
+      'bc_entity_type' => 'node',
+    ),
+  ),
+  'fields' => array(
+    'body' => array(
+      'entity_types' => array(
+        0 => 'node',
+      ),
+      'translatable' => '0',
+      'settings' => array(
+        'profile2_private' => FALSE,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_body' => array(
+                'value' => 'body_value',
+                'summary' => 'body_summary',
+                'format' => 'body_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_body' => array(
+                'value' => 'body_value',
+                'summary' => 'body_summary',
+                'format' => 'body_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'body',
+      'type' => 'text_with_summary',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'summary' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'page',
+          1 => 'article',
+          2 => 'fntsite_template',
+          3 => 'message',
+          4 => 'original_product',
+          5 => 'product_information',
+          6 => 'product_summary',
+          7 => 'product',
+          8 => 'section_caption',
+          9 => 'event',
+          10 => 'verb',
+          11 => 'homepage',
+          12 => 'home_node',
+          13 => 'privacy_policy',
+          14 => 'restore',
+          15 => 'restore_page',
+          16 => 'product_science_page',
+          17 => 'personal_development_page',
+          18 => 'personal_development',
+          19 => 'user_node',
+          20 => 'clinic',
+          21 => 'azzalure',
+          22 => 'clinic_support',
+          23 => 'resource_centre',
+          24 => 'technique_guidence',
+          25 => 'patient_support',
+        ),
+      ),
+    ),
+    'field_body_2' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'profile2_private' => FALSE,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_body_2' => array(
+                'value' => 'field_body_2_value',
+                'summary' => 'field_body_2_summary',
+                'format' => 'field_body_2_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_body_2' => array(
+                'value' => 'field_body_2_value',
+                'summary' => 'field_body_2_summary',
+                'format' => 'field_body_2_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_body_2',
+      'type' => 'text_with_summary',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'summary' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'resource_centre',
+        ),
+      ),
+    ),
+    'field_resource_centre_category' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'resource_centre',
+            'parent' => '0',
+          ),
+        ),
+        'profile2_private' => FALSE,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_resource_centre_category' => array(
+                'tid' => 'field_resource_centre_category_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_resource_centre_category' => array(
+                'tid' => 'field_resource_centre_category_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'field_name' => 'field_resource_centre_category',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'resource_centre',
+        ),
+      ),
+    ),
+    'field_resource_centre_document' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'display_field' => 0,
+        'display_default' => 0,
+        'uri_scheme' => 'public',
+        'profile2_private' => FALSE,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_resource_centre_document' => array(
+                'fid' => 'field_resource_centre_document_fid',
+                'display' => 'field_resource_centre_document_display',
+                'description' => 'field_resource_centre_document_description',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_resource_centre_document' => array(
+                'fid' => 'field_resource_centre_document_fid',
+                'display' => 'field_resource_centre_document_display',
+                'description' => 'field_resource_centre_document_description',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'fid' => array(
+          'table' => 'file_managed',
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'field_name' => 'field_resource_centre_document',
+      'type' => 'file',
+      'module' => 'file',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'fid' => array(
+          'description' => 'The {file_managed}.fid being referenced in this field.',
+          'type' => 'int',
+          'not null' => FALSE,
+          'unsigned' => TRUE,
+        ),
+        'display' => array(
+          'description' => 'Flag to control whether this file should be displayed when viewing content.',
+          'type' => 'int',
+          'size' => 'tiny',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+          'default' => 1,
+        ),
+        'description' => array(
+          'description' => 'A description of the file.',
+          'type' => 'text',
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'resource_centre',
+        ),
+      ),
+    ),
+    'field_resource_centre_document_2' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'display_field' => 0,
+        'display_default' => 0,
+        'uri_scheme' => 'private',
+        'profile2_private' => FALSE,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_resource_centre_document_2' => array(
+                'fid' => 'field_resource_centre_document_2_fid',
+                'display' => 'field_resource_centre_document_2_display',
+                'description' => 'field_resource_centre_document_2_description',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_resource_centre_document_2' => array(
+                'fid' => 'field_resource_centre_document_2_fid',
+                'display' => 'field_resource_centre_document_2_display',
+                'description' => 'field_resource_centre_document_2_description',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'fid' => array(
+          'table' => 'file_managed',
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'field_name' => 'field_resource_centre_document_2',
+      'type' => 'file',
+      'module' => 'file',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'fid' => array(
+          'description' => 'The {file_managed}.fid being referenced in this field.',
+          'type' => 'int',
+          'not null' => FALSE,
+          'unsigned' => TRUE,
+        ),
+        'display' => array(
+          'description' => 'Flag to control whether this file should be displayed when viewing content.',
+          'type' => 'int',
+          'size' => 'tiny',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+          'default' => 1,
+        ),
+        'description' => array(
+          'description' => 'A description of the file.',
+          'type' => 'text',
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'resource_centre',
+        ),
+      ),
+    ),
+    'field_resource_centre_sub_title' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '255',
+        'profile2_private' => FALSE,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_resource_centre_sub_title' => array(
+                'value' => 'field_resource_centre_sub_title_value',
+                'format' => 'field_resource_centre_sub_title_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_resource_centre_sub_title' => array(
+                'value' => 'field_resource_centre_sub_title_value',
+                'format' => 'field_resource_centre_sub_title_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_resource_centre_sub_title',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'resource_centre',
+        ),
+      ),
+    ),
+    'field_resource_centre_sub_title2' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '255',
+        'profile2_private' => FALSE,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_resource_centre_sub_title2' => array(
+                'value' => 'field_resource_centre_sub_title2_value',
+                'format' => 'field_resource_centre_sub_title2_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_resource_centre_sub_title2' => array(
+                'value' => 'field_resource_centre_sub_title2_value',
+                'format' => 'field_resource_centre_sub_title2_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_resource_centre_sub_title2',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'resource_centre',
+        ),
+      ),
+    ),
+    'field_resource_centre_subcategor' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'resource_centre_sub_category_',
+            'parent' => '0',
+          ),
+        ),
+        'profile2_private' => FALSE,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_resource_centre_subcategor' => array(
+                'tid' => 'field_resource_centre_subcategor_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_resource_centre_subcategor' => array(
+                'tid' => 'field_resource_centre_subcategor_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'field_name' => 'field_resource_centre_subcategor',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'resource_centre',
+        ),
+      ),
+    ),
+    'field_resource_centre_tags' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'product_category',
+            'parent' => '0',
+          ),
+        ),
+        'profile2_private' => FALSE,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_resource_centre_tags' => array(
+                'tid' => 'field_resource_centre_tags_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_resource_centre_tags' => array(
+                'tid' => 'field_resource_centre_tags_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'field_name' => 'field_resource_centre_tags',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'resource_centre',
+        ),
+      ),
+    ),
+    'field_resource_centre_tags_2' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'product_category',
+            'parent' => '0',
+          ),
+        ),
+        'profile2_private' => FALSE,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_resource_centre_tags_2' => array(
+                'tid' => 'field_resource_centre_tags_2_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_resource_centre_tags_2' => array(
+                'tid' => 'field_resource_centre_tags_2_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'field_name' => 'field_resource_centre_tags_2',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'resource_centre',
+        ),
+      ),
+    ),
+    'field_resource_centre_type' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'resource_centre_type',
+            'parent' => '0',
+          ),
+        ),
+        'profile2_private' => FALSE,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_resource_centre_type' => array(
+                'tid' => 'field_resource_centre_type_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_resource_centre_type' => array(
+                'tid' => 'field_resource_centre_type_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'field_name' => 'field_resource_centre_type',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'resource_centre',
+        ),
+      ),
+    ),
+    'field_resourcecentresubcategory2' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'resource_centre_sub_category_',
+            'parent' => '0',
+          ),
+        ),
+        'profile2_private' => FALSE,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_resourcecentresubcategory2' => array(
+                'tid' => 'field_resourcecentresubcategory2_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_resourcecentresubcategory2' => array(
+                'tid' => 'field_resourcecentresubcategory2_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'field_name' => 'field_resourcecentresubcategory2',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'resource_centre',
+        ),
+      ),
+    ),
+    'field_user_type' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'type_of_user',
+            'parent' => '0',
+          ),
+        ),
+        'profile2_private' => FALSE,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_user_type' => array(
+                'tid' => 'field_user_type_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_user_type' => array(
+                'tid' => 'field_user_type_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'field_name' => 'field_user_type',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'resource_centre',
+        ),
+      ),
+    ),
+    'field_user_type_2' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'type_of_user',
+            'parent' => '0',
+          ),
+        ),
+        'profile2_private' => FALSE,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_user_type_2' => array(
+                'tid' => 'field_user_type_2_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_user_type_2' => array(
+                'tid' => 'field_user_type_2_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'field_name' => 'field_user_type_2',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'resource_centre',
+        ),
+      ),
+    ),
+  ),
+  'instances' => array(
+    'body' => array(
+      0 => array(
+        'label' => 'Body',
+        'widget' => array(
+          'weight' => '7',
+          'type' => 'text_textarea_with_summary',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'rows' => '20',
+            'summary_rows' => 5,
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'display_summary' => 1,
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'text_default',
+            'settings' => array(),
+            'module' => 'text',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'hidden',
+            'type' => 'text_summary_or_trimmed',
+            'settings' => array(
+              'trim_length' => 600,
+            ),
+            'module' => 'text',
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'body',
+        'entity_type' => 'node',
+        'bundle' => 'resource_centre',
+        'deleted' => '0',
+      ),
+    ),
+    'field_body_2' => array(
+      0 => array(
+        'label' => 'Body 2',
+        'widget' => array(
+          'weight' => '13',
+          'type' => 'text_textarea_with_summary',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'rows' => '20',
+            'summary_rows' => 5,
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'display_summary' => 0,
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'settings' => array(),
+            'module' => 'text',
+            'weight' => 7,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_body_2',
+        'entity_type' => 'node',
+        'bundle' => 'resource_centre',
+        'deleted' => '0',
+      ),
+    ),
+    'field_resource_centre_category' => array(
+      0 => array(
+        'label' => 'Resource centre category',
+        'widget' => array(
+          'weight' => '1',
+          'type' => 'options_buttons',
+          'module' => 'options',
+          'active' => 1,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'taxonomy_term_reference_link',
+            'settings' => array(),
+            'module' => 'taxonomy',
+            'weight' => 1,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_resource_centre_category',
+        'entity_type' => 'node',
+        'bundle' => 'resource_centre',
+        'deleted' => '0',
+      ),
+    ),
+    'field_resource_centre_document' => array(
+      0 => array(
+        'label' => 'Resource centre document',
+        'widget' => array(
+          'weight' => '9',
+          'type' => 'media_generic',
+          'module' => 'media',
+          'active' => 1,
+          'settings' => array(
+            'browser_plugins' => array(
+              'upload' => 'upload',
+              'media_default--media_browser_1' => 0,
+              'media_default--media_browser_my_files' => 0,
+            ),
+            'allowed_types' => array(
+              'image' => 'image',
+              'video' => 'video',
+              'document' => 'document',
+              'audio' => 0,
+            ),
+            'allowed_schemes' => array(
+              'public' => 'public',
+              'private' => 0,
+            ),
+          ),
+        ),
+        'settings' => array(
+          'file_directory' => '',
+          'file_extensions' => 'txt pdf doc jpeg jpg png mp4 mpv',
+          'max_filesize' => '',
+          'description_field' => 0,
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'file_default',
+            'settings' => array(),
+            'module' => 'file',
+            'weight' => 3,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'field_name' => 'field_resource_centre_document',
+        'entity_type' => 'node',
+        'bundle' => 'resource_centre',
+        'deleted' => '0',
+      ),
+    ),
+    'field_resource_centre_document_2' => array(
+      0 => array(
+        'label' => 'Resource centre document 2',
+        'widget' => array(
+          'weight' => '15',
+          'type' => 'media_generic',
+          'module' => 'media',
+          'active' => 1,
+          'settings' => array(
+            'browser_plugins' => array(
+              'upload' => 0,
+              'media_default--media_browser_1' => 0,
+              'media_default--media_browser_my_files' => 0,
+            ),
+            'allowed_types' => array(
+              'image' => 'image',
+              'video' => 'video',
+              'document' => 'document',
+              'audio' => 0,
+            ),
+            'allowed_schemes' => array(
+              'private' => 'private',
+              'public' => 0,
+            ),
+          ),
+        ),
+        'settings' => array(
+          'file_directory' => '',
+          'file_extensions' => 'txt pdf jpg jpeg gif png bmp mp4 mpv',
+          'max_filesize' => '',
+          'description_field' => 0,
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'file_default',
+            'settings' => array(),
+            'module' => 'file',
+            'weight' => 9,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'field_name' => 'field_resource_centre_document_2',
+        'entity_type' => 'node',
+        'bundle' => 'resource_centre',
+        'deleted' => '0',
+      ),
+    ),
+    'field_resource_centre_sub_title' => array(
+      0 => array(
+        'label' => 'Resource centre sub title',
+        'widget' => array(
+          'weight' => '6',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '60',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'settings' => array(),
+            'module' => 'text',
+            'weight' => 5,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_resource_centre_sub_title',
+        'entity_type' => 'node',
+        'bundle' => 'resource_centre',
+        'deleted' => '0',
+      ),
+    ),
+    'field_resource_centre_sub_title2' => array(
+      0 => array(
+        'label' => 'Resource centre sub title2',
+        'widget' => array(
+          'weight' => '12',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '60',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'settings' => array(),
+            'module' => 'text',
+            'weight' => 6,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_resource_centre_sub_title2',
+        'entity_type' => 'node',
+        'bundle' => 'resource_centre',
+        'deleted' => '0',
+      ),
+    ),
+    'field_resource_centre_subcategor' => array(
+      0 => array(
+        'label' => 'Resource centre subcategory',
+        'widget' => array(
+          'weight' => '5',
+          'type' => 'options_buttons',
+          'module' => 'options',
+          'active' => 1,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'taxonomy_term_reference_link',
+            'settings' => array(),
+            'module' => 'taxonomy',
+            'weight' => 10,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => array(
+          0 => array(
+            'tid' => '543',
+          ),
+        ),
+        'field_name' => 'field_resource_centre_subcategor',
+        'entity_type' => 'node',
+        'bundle' => 'resource_centre',
+        'deleted' => '0',
+      ),
+    ),
+    'field_resource_centre_tags' => array(
+      0 => array(
+        'label' => 'Resource centre tags',
+        'widget' => array(
+          'weight' => '8',
+          'type' => 'options_buttons',
+          'module' => 'options',
+          'active' => 1,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'taxonomy_term_reference_link',
+            'settings' => array(),
+            'module' => 'taxonomy',
+            'weight' => 2,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_resource_centre_tags',
+        'entity_type' => 'node',
+        'bundle' => 'resource_centre',
+        'deleted' => '0',
+      ),
+    ),
+    'field_resource_centre_tags_2' => array(
+      0 => array(
+        'label' => 'Resource centre tags 2',
+        'widget' => array(
+          'weight' => '14',
+          'type' => 'options_buttons',
+          'module' => 'options',
+          'active' => 1,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'taxonomy_term_reference_link',
+            'settings' => array(),
+            'module' => 'taxonomy',
+            'weight' => 8,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_resource_centre_tags_2',
+        'entity_type' => 'node',
+        'bundle' => 'resource_centre',
+        'deleted' => '0',
+      ),
+    ),
+    'field_resource_centre_type' => array(
+      0 => array(
+        'label' => 'Resource centre type',
+        'widget' => array(
+          'weight' => '0',
+          'type' => 'options_select',
+          'module' => 'options',
+          'active' => 1,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'taxonomy_term_reference_link',
+            'settings' => array(),
+            'module' => 'taxonomy',
+            'weight' => 4,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => array(
+          0 => array(
+            'tid' => '532',
+          ),
+        ),
+        'field_name' => 'field_resource_centre_type',
+        'entity_type' => 'node',
+        'bundle' => 'resource_centre',
+        'deleted' => '0',
+      ),
+    ),
+    'field_resourcecentresubcategory2' => array(
+      0 => array(
+        'label' => 'Resource centre subcategory 2',
+        'widget' => array(
+          'weight' => '11',
+          'type' => 'options_buttons',
+          'module' => 'options',
+          'active' => 1,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'taxonomy_term_reference_link',
+            'settings' => array(),
+            'module' => 'taxonomy',
+            'weight' => 11,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => array(
+          0 => array(
+            'tid' => '542',
+          ),
+        ),
+        'field_name' => 'field_resourcecentresubcategory2',
+        'entity_type' => 'node',
+        'bundle' => 'resource_centre',
+        'deleted' => '0',
+      ),
+    ),
+    'field_user_type' => array(
+      0 => array(
+        'label' => 'User type',
+        'widget' => array(
+          'weight' => '10',
+          'type' => 'options_buttons',
+          'module' => 'options',
+          'active' => 1,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'taxonomy_term_reference_link',
+            'settings' => array(),
+            'module' => 'taxonomy',
+            'weight' => 12,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => array(
+          0 => array(
+            'tid' => '508',
+          ),
+        ),
+        'field_name' => 'field_user_type',
+        'entity_type' => 'node',
+        'bundle' => 'resource_centre',
+        'deleted' => '0',
+      ),
+    ),
+    'field_user_type_2' => array(
+      0 => array(
+        'label' => 'User type 2',
+        'widget' => array(
+          'weight' => '16',
+          'type' => 'options_buttons',
+          'module' => 'options',
+          'active' => 1,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'taxonomy_term_reference_link',
+            'settings' => array(),
+            'module' => 'taxonomy',
+            'weight' => 13,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => array(
+          0 => array(
+            'tid' => '508',
+          ),
+        ),
+        'field_name' => 'field_user_type_2',
+        'entity_type' => 'node',
+        'bundle' => 'resource_centre',
+        'deleted' => '0',
+      ),
+    ),
+  ),
+);

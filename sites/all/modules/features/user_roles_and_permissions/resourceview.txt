@@ -1,0 +1,212 @@
+$view = new view();
+$view->name = 'resource_centre';
+$view->description = '';
+$view->tag = 'default';
+$view->base_table = 'node';
+$view->human_name = 'Resource centre';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['use_ajax'] = TRUE;
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['exposed_form']['options']['autosubmit'] = TRUE;
+$handler->display->display_options['pager']['type'] = 'some';
+$handler->display->display_options['pager']['options']['items_per_page'] = '5';
+$handler->display->display_options['style_plugin'] = 'default';
+$handler->display->display_options['row_plugin'] = 'fields';
+/* Relationship: Content: Taxonomy terms on node */
+$handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+$handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+$handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+$handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+  'product_category' => 'product_category',
+  'country' => 0,
+  'county' => 0,
+  'event_category' => 0,
+  'medical_body' => 0,
+  'page' => 0,
+  'personal_development' => 0,
+  'product_science' => 0,
+  'profession' => 0,
+  'registration_stage' => 0,
+  'resource_centre' => 0,
+  'resource_centre_sub_category_' => 0,
+  'resource_centre_type' => 0,
+  'section' => 0,
+  'tags' => 0,
+  'template_type' => 0,
+  'title' => 0,
+  'type_of_user' => 0,
+  'user_node_type' => 0,
+);
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title']['id'] = 'title';
+$handler->display->display_options['fields']['title']['table'] = 'node';
+$handler->display->display_options['fields']['title']['field'] = 'title';
+$handler->display->display_options['fields']['title']['label'] = '';
+$handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+$handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+$handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+/* Field: Content: Body */
+$handler->display->display_options['fields']['body']['id'] = 'body';
+$handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+$handler->display->display_options['fields']['body']['field'] = 'body';
+$handler->display->display_options['fields']['body']['label'] = '';
+$handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['body']['type'] = 'text_plain';
+/* Field: Content: Body 2 */
+$handler->display->display_options['fields']['field_body_2']['id'] = 'field_body_2';
+$handler->display->display_options['fields']['field_body_2']['table'] = 'field_data_field_body_2';
+$handler->display->display_options['fields']['field_body_2']['field'] = 'field_body_2';
+$handler->display->display_options['fields']['field_body_2']['label'] = '';
+$handler->display->display_options['fields']['field_body_2']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_body_2']['type'] = 'text_plain';
+/* Field: Content: Resource centre category */
+$handler->display->display_options['fields']['field_resource_centre_category']['id'] = 'field_resource_centre_category';
+$handler->display->display_options['fields']['field_resource_centre_category']['table'] = 'field_data_field_resource_centre_category';
+$handler->display->display_options['fields']['field_resource_centre_category']['field'] = 'field_resource_centre_category';
+$handler->display->display_options['fields']['field_resource_centre_category']['label'] = '';
+$handler->display->display_options['fields']['field_resource_centre_category']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_resource_centre_category']['type'] = 'taxonomy_term_reference_plain';
+/* Field: Content: Resource centre document */
+$handler->display->display_options['fields']['field_resource_centre_document']['id'] = 'field_resource_centre_document';
+$handler->display->display_options['fields']['field_resource_centre_document']['table'] = 'field_data_field_resource_centre_document';
+$handler->display->display_options['fields']['field_resource_centre_document']['field'] = 'field_resource_centre_document';
+$handler->display->display_options['fields']['field_resource_centre_document']['label'] = '';
+$handler->display->display_options['fields']['field_resource_centre_document']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_resource_centre_document']['click_sort_column'] = 'fid';
+$handler->display->display_options['fields']['field_resource_centre_document']['type'] = 'file_download_link';
+$handler->display->display_options['fields']['field_resource_centre_document']['settings'] = array(
+  'text' => 'Download',
+);
+/* Field: Content: Resource centre document 2 */
+$handler->display->display_options['fields']['field_resource_centre_document_2']['id'] = 'field_resource_centre_document_2';
+$handler->display->display_options['fields']['field_resource_centre_document_2']['table'] = 'field_data_field_resource_centre_document_2';
+$handler->display->display_options['fields']['field_resource_centre_document_2']['field'] = 'field_resource_centre_document_2';
+$handler->display->display_options['fields']['field_resource_centre_document_2']['label'] = '';
+$handler->display->display_options['fields']['field_resource_centre_document_2']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_resource_centre_document_2']['click_sort_column'] = 'fid';
+$handler->display->display_options['fields']['field_resource_centre_document_2']['type'] = 'file_download_link';
+$handler->display->display_options['fields']['field_resource_centre_document_2']['settings'] = array(
+  'text' => 'Download',
+);
+/* Field: Content: Resource centre sub title */
+$handler->display->display_options['fields']['field_resource_centre_sub_title']['id'] = 'field_resource_centre_sub_title';
+$handler->display->display_options['fields']['field_resource_centre_sub_title']['table'] = 'field_data_field_resource_centre_sub_title';
+$handler->display->display_options['fields']['field_resource_centre_sub_title']['field'] = 'field_resource_centre_sub_title';
+$handler->display->display_options['fields']['field_resource_centre_sub_title']['label'] = '';
+$handler->display->display_options['fields']['field_resource_centre_sub_title']['element_label_colon'] = FALSE;
+/* Field: Content: Resource centre sub title2 */
+$handler->display->display_options['fields']['field_resource_centre_sub_title2']['id'] = 'field_resource_centre_sub_title2';
+$handler->display->display_options['fields']['field_resource_centre_sub_title2']['table'] = 'field_data_field_resource_centre_sub_title2';
+$handler->display->display_options['fields']['field_resource_centre_sub_title2']['field'] = 'field_resource_centre_sub_title2';
+$handler->display->display_options['fields']['field_resource_centre_sub_title2']['label'] = '';
+$handler->display->display_options['fields']['field_resource_centre_sub_title2']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_resource_centre_sub_title2']['type'] = 'text_plain';
+/* Field: Content: Resource centre tags */
+$handler->display->display_options['fields']['field_resource_centre_tags']['id'] = 'field_resource_centre_tags';
+$handler->display->display_options['fields']['field_resource_centre_tags']['table'] = 'field_data_field_resource_centre_tags';
+$handler->display->display_options['fields']['field_resource_centre_tags']['field'] = 'field_resource_centre_tags';
+$handler->display->display_options['fields']['field_resource_centre_tags']['label'] = '';
+$handler->display->display_options['fields']['field_resource_centre_tags']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_resource_centre_tags']['type'] = 'taxonomy_term_reference_plain';
+/* Field: Content: Resource centre tags 2 */
+$handler->display->display_options['fields']['field_resource_centre_tags_2']['id'] = 'field_resource_centre_tags_2';
+$handler->display->display_options['fields']['field_resource_centre_tags_2']['table'] = 'field_data_field_resource_centre_tags_2';
+$handler->display->display_options['fields']['field_resource_centre_tags_2']['field'] = 'field_resource_centre_tags_2';
+$handler->display->display_options['fields']['field_resource_centre_tags_2']['label'] = '';
+$handler->display->display_options['fields']['field_resource_centre_tags_2']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_resource_centre_tags_2']['type'] = 'taxonomy_term_reference_plain';
+/* Field: Content: Resource centre type */
+$handler->display->display_options['fields']['field_resource_centre_type']['id'] = 'field_resource_centre_type';
+$handler->display->display_options['fields']['field_resource_centre_type']['table'] = 'field_data_field_resource_centre_type';
+$handler->display->display_options['fields']['field_resource_centre_type']['field'] = 'field_resource_centre_type';
+$handler->display->display_options['fields']['field_resource_centre_type']['label'] = '';
+$handler->display->display_options['fields']['field_resource_centre_type']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_resource_centre_type']['type'] = 'taxonomy_term_reference_plain';
+/* Field: Content: Resource centre subcategory */
+$handler->display->display_options['fields']['field_resource_centre_subcategor']['id'] = 'field_resource_centre_subcategor';
+$handler->display->display_options['fields']['field_resource_centre_subcategor']['table'] = 'field_data_field_resource_centre_subcategor';
+$handler->display->display_options['fields']['field_resource_centre_subcategor']['field'] = 'field_resource_centre_subcategor';
+$handler->display->display_options['fields']['field_resource_centre_subcategor']['label'] = '';
+$handler->display->display_options['fields']['field_resource_centre_subcategor']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_resource_centre_subcategor']['type'] = 'taxonomy_term_reference_plain';
+/* Field: Content: Resource centre subcategory 2 */
+$handler->display->display_options['fields']['field_resourcecentresubcategory2']['id'] = 'field_resourcecentresubcategory2';
+$handler->display->display_options['fields']['field_resourcecentresubcategory2']['table'] = 'field_data_field_resourcecentresubcategory2';
+$handler->display->display_options['fields']['field_resourcecentresubcategory2']['field'] = 'field_resourcecentresubcategory2';
+$handler->display->display_options['fields']['field_resourcecentresubcategory2']['label'] = '';
+$handler->display->display_options['fields']['field_resourcecentresubcategory2']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_resourcecentresubcategory2']['type'] = 'taxonomy_term_reference_plain';
+/* Field: Content: User type */
+$handler->display->display_options['fields']['field_user_type']['id'] = 'field_user_type';
+$handler->display->display_options['fields']['field_user_type']['table'] = 'field_data_field_user_type';
+$handler->display->display_options['fields']['field_user_type']['field'] = 'field_user_type';
+$handler->display->display_options['fields']['field_user_type']['label'] = '';
+$handler->display->display_options['fields']['field_user_type']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_user_type']['type'] = 'taxonomy_term_reference_plain';
+/* Field: Content: User type 2 */
+$handler->display->display_options['fields']['field_user_type_2']['id'] = 'field_user_type_2';
+$handler->display->display_options['fields']['field_user_type_2']['table'] = 'field_data_field_user_type_2';
+$handler->display->display_options['fields']['field_user_type_2']['field'] = 'field_user_type_2';
+$handler->display->display_options['fields']['field_user_type_2']['label'] = '';
+$handler->display->display_options['fields']['field_user_type_2']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_user_type_2']['type'] = 'taxonomy_term_reference_plain';
+/* Sort criterion: Content: Post date */
+$handler->display->display_options['sorts']['created']['id'] = 'created';
+$handler->display->display_options['sorts']['created']['table'] = 'node';
+$handler->display->display_options['sorts']['created']['field'] = 'created';
+$handler->display->display_options['sorts']['created']['order'] = 'DESC';
+/* Filter criterion: Content: Published */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = 1;
+$handler->display->display_options['filters']['status']['group'] = 1;
+$handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'resource_centre' => 'resource_centre',
+);
+/* Filter criterion: Content: Resource centre category (field_resource_centre_category) */
+$handler->display->display_options['filters']['field_resource_centre_category_tid']['id'] = 'field_resource_centre_category_tid';
+$handler->display->display_options['filters']['field_resource_centre_category_tid']['table'] = 'field_data_field_resource_centre_category';
+$handler->display->display_options['filters']['field_resource_centre_category_tid']['field'] = 'field_resource_centre_category_tid';
+$handler->display->display_options['filters']['field_resource_centre_category_tid']['value'] = array(
+  534 => '534',
+  537 => '537',
+  541 => '541',
+  538 => '538',
+  536 => '536',
+  540 => '540',
+  535 => '535',
+  539 => '539',
+);
+$handler->display->display_options['filters']['field_resource_centre_category_tid']['exposed'] = TRUE;
+$handler->display->display_options['filters']['field_resource_centre_category_tid']['expose']['operator_id'] = 'field_resource_centre_category_tid_op';
+$handler->display->display_options['filters']['field_resource_centre_category_tid']['expose']['operator'] = 'field_resource_centre_category_tid_op';
+$handler->display->display_options['filters']['field_resource_centre_category_tid']['expose']['identifier'] = 'field_resource_centre_category_tid';
+$handler->display->display_options['filters']['field_resource_centre_category_tid']['expose']['required'] = TRUE;
+$handler->display->display_options['filters']['field_resource_centre_category_tid']['expose']['remember_roles'] = array(
+  2 => '2',
+  1 => 0,
+  4 => 0,
+  3 => 0,
+);
+$handler->display->display_options['filters']['field_resource_centre_category_tid']['reduce_duplicates'] = TRUE;
+$handler->display->display_options['filters']['field_resource_centre_category_tid']['type'] = 'select';
+$handler->display->display_options['filters']['field_resource_centre_category_tid']['vocabulary'] = 'resource_centre';
+
+/* Display: Block Resource centre */
+$handler = $view->new_display('block', 'Block Resource centre', 'block');

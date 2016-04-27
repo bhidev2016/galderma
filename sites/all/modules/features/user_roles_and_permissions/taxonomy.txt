@@ -1,0 +1,618 @@
+$data = array(
+  'bundles' => array(
+    'country' => (object) array(
+      'vid' => '5',
+      'name' => 'Country',
+      'machine_name' => 'country',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'county' => (object) array(
+      'vid' => '8',
+      'name' => 'County',
+      'machine_name' => 'county',
+      'description' => 'County within the UK or Ireland',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'event_category' => (object) array(
+      'vid' => '15',
+      'name' => 'Event category',
+      'machine_name' => 'event_category',
+      'description' => 'e.g. Skin, Beauty',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'medical_body' => (object) array(
+      'vid' => '4',
+      'name' => 'Medical Body',
+      'machine_name' => 'medical_body',
+      'description' => 'Medical Body (if Medical Professional)',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'page' => (object) array(
+      'vid' => '12',
+      'name' => 'Page',
+      'machine_name' => 'page',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'personal_development' => (object) array(
+      'vid' => '16',
+      'name' => 'Personal Development',
+      'machine_name' => 'personal_development',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'product_category' => (object) array(
+      'vid' => '14',
+      'name' => 'Product category',
+      'machine_name' => 'product_category',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'product_science' => (object) array(
+      'vid' => '18',
+      'name' => 'Product Science',
+      'machine_name' => 'product_science',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'profession' => (object) array(
+      'vid' => '3',
+      'name' => 'Profession',
+      'machine_name' => 'profession',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'registration_stage' => (object) array(
+      'vid' => '11',
+      'name' => 'Registration stage',
+      'machine_name' => 'registration_stage',
+      'description' => 'e.g. New, re-approval, declined',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'resource_centre' => (object) array(
+      'vid' => '19',
+      'name' => 'Resource Centre',
+      'machine_name' => 'resource_centre',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'resource_centre_sub_category_' => (object) array(
+      'vid' => '21',
+      'name' => 'Resource Centre Sub category',
+      'machine_name' => 'resource_centre_sub_category_',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'resource_centre_type' => (object) array(
+      'vid' => '20',
+      'name' => 'Resource centre type',
+      'machine_name' => 'resource_centre_type',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'section' => (object) array(
+      'vid' => '13',
+      'name' => 'Section',
+      'machine_name' => 'section',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'tags' => (object) array(
+      'vid' => '1',
+      'name' => 'Tags',
+      'machine_name' => 'tags',
+      'description' => 'Use tags to group articles on similar topics into categories.',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'template_type' => (object) array(
+      'vid' => '9',
+      'name' => 'Template type',
+      'machine_name' => 'template_type',
+      'description' => 'The type of template e.g. mail',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'title' => (object) array(
+      'vid' => '2',
+      'name' => 'Title',
+      'machine_name' => 'title',
+      'description' => 'e.g. Mr, Mrs, Miss',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'type_of_user' => (object) array(
+      'vid' => '10',
+      'name' => 'Type of User',
+      'machine_name' => 'type_of_user',
+      'description' => 'e.g. Admin, User',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+    'user_node_type' => (object) array(
+      'vid' => '17',
+      'name' => 'User node type',
+      'machine_name' => 'user_node_type',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+      'bc_entity_type' => 'taxonomy_term',
+    ),
+  ),
+  'fields' => array(
+    'field_type_user_image' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'uri_scheme' => 'public',
+        'default_image' => 0,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_type_user_image' => array(
+                'fid' => 'field_type_user_image_fid',
+                'alt' => 'field_type_user_image_alt',
+                'title' => 'field_type_user_image_title',
+                'width' => 'field_type_user_image_width',
+                'height' => 'field_type_user_image_height',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_type_user_image' => array(
+                'fid' => 'field_type_user_image_fid',
+                'alt' => 'field_type_user_image_alt',
+                'title' => 'field_type_user_image_title',
+                'width' => 'field_type_user_image_width',
+                'height' => 'field_type_user_image_height',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'fid' => array(
+          'table' => 'file_managed',
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'field_name' => 'field_type_user_image',
+      'type' => 'image',
+      'module' => 'image',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'fid' => array(
+          'description' => 'The {file_managed}.fid being referenced in this field.',
+          'type' => 'int',
+          'not null' => FALSE,
+          'unsigned' => TRUE,
+        ),
+        'alt' => array(
+          'description' => 'Alternative image text, for the image\'s \'alt\' attribute.',
+          'type' => 'varchar',
+          'length' => 512,
+          'not null' => FALSE,
+        ),
+        'title' => array(
+          'description' => 'Image title text, for the image\'s \'title\' attribute.',
+          'type' => 'varchar',
+          'length' => 1024,
+          'not null' => FALSE,
+        ),
+        'width' => array(
+          'description' => 'The width of the image in pixels.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+        ),
+        'height' => array(
+          'description' => 'The height of the image in pixels.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+        ),
+      ),
+      'bundles' => array(
+        'taxonomy_term' => array(
+          0 => 'type_of_user',
+        ),
+      ),
+    ),
+  ),
+  'instances' => array(
+    'field_type_user_image' => array(
+      0 => array(
+        'label' => 'type_user_image',
+        'widget' => array(
+          'weight' => '31',
+          'type' => 'image_image',
+          'module' => 'image',
+          'active' => 1,
+          'settings' => array(
+            'progress_indicator' => 'throbber',
+            'preview_image_style' => 'thumbnail',
+          ),
+        ),
+        'settings' => array(
+          'file_directory' => '',
+          'file_extensions' => 'png gif jpg jpeg',
+          'max_filesize' => '',
+          'max_resolution' => '',
+          'min_resolution' => '',
+          'alt_field' => 0,
+          'title_field' => 0,
+          'default_image' => '14',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'image',
+            'settings' => array(
+              'image_style' => '',
+              'image_link' => '',
+            ),
+            'module' => 'image',
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'field_name' => 'field_type_user_image',
+        'entity_type' => 'taxonomy_term',
+        'bundle' => 'type_of_user',
+        'deleted' => '0',
+      ),
+    ),
+  ),
+);
