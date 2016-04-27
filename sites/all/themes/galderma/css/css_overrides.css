@@ -1,0 +1,55 @@
+/* CSS Document */
+
+body{
+	max-width:none!important;
+	padding-left:0px!important;
+	padding-right:0px!important;
+	background-size:contain;
+}
+
+.views-field-field-caption{
+	  margin-bottom: 12vw!important;
+}
+.views-field-nothing{
+	margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-top: 6em;
+}
+
+.l-main{
+	text-align:center!important;
+	max-width:none!important;
+}
+
+section, .top-bar-section{
+	max-width:none!important;
+}
+
+.block-views-original-product-block-1, .block-block-2, .block-block-3, .block-block-4{
+	width:100%;
+	display:inline-block!important;
+}
+
+.two-columns-aside > p:last-child > a:link{
+	width:130px;
+}
+
+body .subfooter{
+	text-align:center;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+#user-login-form input{
+	display:inline-block;
+}
+
+.view-user-tempters{
+	display:inline-block;
+	max-width:1000px;
+}
+
+.leaving{
+	display:none;
+}
