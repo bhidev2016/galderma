@@ -27,6 +27,7 @@
  * @ingroup views_templates
  */
 ?>
+
 <div class="<?php print $classes; ?>">
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
@@ -41,36 +42,25 @@
 
   <?php if ($exposed): ?>
     <div class="view-filters">
-      <?php //print $exposed; ?>
+      
       <div class="view clinical_support clinical_support_inner">
       <div class="holder">
-                        <p class="no_marg">74 Downloads available</p>
-                        <div class="clearfix">
-                          <div class="col col_60">
-                                <select class="sel_control">
-                                      <option>BEFORE AND AFTER</option>                                    
-                                      <option>Product Images</option>
-                                      <option>Patient Treatment Forms</option>
-                                      <option>Factsheets</option>
-                                      <option>Patient Leaflets</option>
-                                      <option>Videos</option>
-                                      <option>Posters</option>
-                                      <option>HCP Leavepieces</option>
-                                </select>
-                            </div>
-                            <div class="col col_40">
-                              <div class="clearfix">
-                                    <div class="f_right sort_item"> 
-                                        <span>SORT BY: </span>
-                                        <span><a href="#">NAME </a></span>
-                                        <span><a href="#" class="selected_sortitem">TAGS</a></span>
-                                    </div>
-                                 </div>  
-                            </div>
-                            
-                        </div>
-                        
-                     </div>
+        <p class="no_marg">1 Downloads available</p>
+        <div class="col col_60">
+          <?php echo $exposed;?>
+        </div>
+        <div class="col col_40">
+          <div class="clearfix">
+                <div class="f_right sort_item"> 
+                    <span>SORT BY: </span>
+                    <span><a href="#">NAME </a></span>
+                    <span><a href="#" class="selected_sortitem">TAGS</a></span>
+                    
+                </div>
+             </div>  
+        </div>
+      
+      </div>
     </div>
   </div>
   <?php endif; ?>
