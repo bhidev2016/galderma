@@ -1,0 +1,17 @@
+name = User roles and permissions
+core = 7.x
+package = Features
+version = 7.x-1.0-beta1
+dependencies[] = features
+features[features_api][] = api:2
+features[user_role][] = Galderma Admin
+features[user_role][] = Galderma Sales Rep
+features[user_role][] = HCP A - Key Account
+features[user_role][] = HCP B - Normal Customer
+features[user_role][] = HCP C - New Customer
+features[user_role][] = Non-Medical A | - Key Account
+features[user_role][] = Non-Medical Agency
+features[user_role][] = Non-Medical B | - Normal Customer
+features[user_role][] = Non-Medical C | - New Customer
+features[user_role][] = Wholesaler
+project path = sites/all/modules/features
